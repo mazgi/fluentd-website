@@ -1,4 +1,4 @@
-# English translations for fluentd package.
+# Japanese translations for fluentd package.
 # Copyright (C) 2011, Sadayuki Furuhashi
 # This file is distributed under the same license as the fluentd package.
 #  <mazgi@gensole>, 2012.
@@ -10,42 +10,42 @@ msgstr ""
 "POT-Creation-Date: 2012-09-08 21:04\n"
 "PO-Revision-Date: 2012-09-08 21:04+0900\n"
 "Last-Translator:  <mazgi@gensole>\n"
-"Language-Team: English\n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 # ed9fcc1b74fc4ad0ade45283e2673860
 #: ../../index.rst:7
 msgid "Welcome to Fluentd's documentation!"
-msgstr "Welcome to Fluentd's documentation!"
+msgstr ""
 
 # 8836c97874e84dac85cf70b3f9aa7fac
 #: ../../index.rst:21
 msgid "Plugins"
-msgstr "Plugins"
+msgstr ""
 
 # f4557b0e89174eca88d48d032cb47b5d
 #: ../../index.rst:23
 msgid "`Fluentd plugins <http://fluentd.org/plugin/>`_"
-msgstr "`Fluentd plugins <http://fluentd.org/plugin/>`_"
+msgstr ""
 
 # ae39526e82074206806ea77ae3a01a1c
 #: ../../index.rst:26
 msgid "Discussion"
-msgstr "Discussion"
+msgstr ""
 
 # a58235bc18f547089f64ec0feab3c73a
 #: ../../index.rst:28
 msgid "`Fluentd Google Group <http://groups.google.com/group/fluentd>`_"
-msgstr "`Fluentd Google Group <http://groups.google.com/group/fluentd>`_"
+msgstr ""
 
 # 9c8ed3f040d742d4a3b49a819ec17694
 #: ../../index.rst:31
 msgid "Powered By"
-msgstr "Powered By"
+msgstr ""
 
 # a7c4d17f72da4335b0de9fb988730314
 #: ../../index.rst:33
@@ -53,13 +53,11 @@ msgid ""
 "`Who uses Fluentd in production? <http://www.quora.com/Who-uses-Fluentd-in-"
 "production>`_ (on Quora)"
 msgstr ""
-"`Who uses Fluentd in production? <http://www.quora.com/Who-uses-Fluentd-in-"
-"production>`_ (on Quora)"
 
 # fdf7e3e726d84140826a7dd11d78549d
 #: ../../index.rst:36
 msgid "Screencasts"
-msgstr "Screencasts"
+msgstr ""
 
 # 35c46e69f97c4cd4a8d8f3f7c5400cf9
 #: ../../index.rst:38
@@ -67,30 +65,28 @@ msgid ""
 "`Building a Massive Event-Log Collector with Fluentd on Heroku with Splunk "
 "<http://www.bigdata.sg/videos/fluentd/>`_"
 msgstr ""
-"`Building a Massive Event-Log Collector with Fluentd on Heroku with Splunk "
-"<http://www.bigdata.sg/videos/fluentd/>`_"
 
 # 36d47fa37436456d820ec878dc17f00a
 #: ../../index.rst:41
 msgid "RDoc"
-msgstr "RDoc"
+msgstr ""
 
 # 242ea439b5ee456c948733a6e04f5ad8
 #: ../../index.rst:43
 msgid "`Fluentd RDoc <http://fluentd.org/rdoc/>`_"
-msgstr "`Fluentd RDoc <http://fluentd.org/rdoc/>`_"
+msgstr ""
 
 # 35e987ed814d451a9fdbe35a20b1afea
 #: ../../index.rst:46
 msgid "Indices and tables"
-msgstr "Indices and tables"
+msgstr ""
 
 # c13c1e8297e74b4b9e0e9db1f62bb4d4
 #: ../../index.rst:48
 msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
+msgstr ""
 
 # 764bb89c5b754032ba69af1376e9a748
 #: ../../index.rst:49
 msgid ":ref:`search`"
-msgstr ":ref:`search`"
+msgstr ""

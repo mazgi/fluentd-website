@@ -1,4 +1,4 @@
-# English translations for fluentd package.
+# Japanese translations for fluentd package.
 # Copyright (C) 2011, Sadayuki Furuhashi
 # This file is distributed under the same license as the fluentd package.
 #  <mazgi@gensole>, 2012.
@@ -10,22 +10,22 @@ msgstr ""
 "POT-Creation-Date: 2012-09-08 21:04\n"
 "PO-Revision-Date: 2012-09-08 21:04+0900\n"
 "Last-Translator:  <mazgi@gensole>\n"
-"Language-Team: English\n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 # 8dbed0e928fa4f9bb979e09034e6934b
 #: ../../plugin.rst:4
 msgid "Plugins"
-msgstr "Plugins"
+msgstr ""
 
 # 6f2d812c35d24933ae08a80a8e045ee0
 #: ../../plugin.rst:6
 msgid "Plugins extend Fluentd's functionality."
-msgstr "Plugins extend Fluentd's functionality."
+msgstr ""
 
 # 8f389a1ed4c8467694ce88f74c2a8a9f
 #: ../../plugin.rst:8
@@ -34,9 +34,6 @@ msgid ""
 "their own plugins. For further information on writing additional plugins, "
 "please refer to :ref:`devel`."
 msgstr ""
-"The user can use the standard plugins packaged with Fluentd, or can write "
-"their own plugins. For further information on writing additional plugins, "
-"please refer to :ref:`devel`."
 
 # 6dc6b7ae25c94dc0bada37a34f970402
 #: ../../plugin.rst:10
@@ -45,24 +42,21 @@ msgid ""
 "plugin and at least one output plugin using the configuration file. For "
 "further information on the configuration file, please refer to :ref:`config`."
 msgstr ""
-"For Fluentd to function properly, the user must enable at least one input "
-"plugin and at least one output plugin using the configuration file. For "
-"further information on the configuration file, please refer to :ref:`config`."
 
 # 76bed6d8a97446f9be6642079995c4fe
 #: ../../plugin.rst:17
 msgid "Types of plugins"
-msgstr "Types of plugins"
+msgstr ""
 
 # 47d57817d13141a09913b49b272bfc0f
 #: ../../plugin.rst:19
 msgid "Fluentd has 3 types of plugins:"
-msgstr "Fluentd has 3 types of plugins:"
+msgstr ""
 
 # e1214d4b8da541d4a012dd3ecb02654d
 #: ../../plugin.rst:22
 msgid "Defines an input source of events."
-msgstr "Defines an input source of events."
+msgstr ""
 
 # 6df0ac5a1bac41079fe6a3c03e62e8a9
 #: ../../plugin.rst:24
@@ -72,15 +66,11 @@ msgid ""
 "Fluentd does not restrict the user from creating input plugins with "
 "alternative implementations."
 msgstr ""
-"An input plugin typically creates a thread and a listen socket. It can also "
-"be written to periodically pull data from data sources. Please note that "
-"Fluentd does not restrict the user from creating input plugins with "
-"alternative implementations."
 
 # bd3d36ecfc684bd6b41b42305cf39e01
 #: ../../plugin.rst:27
 msgid "Defines an output destination for events."
-msgstr "Defines an output destination for events."
+msgstr ""
 
 # 1b43fcc752144c62bec341603e9873c7
 #: ../../plugin.rst:29
@@ -90,20 +80,16 @@ msgid ""
 "out to a file or network. The buffer's behavior is defined by a separate "
 "buffer plugin. Different buffer plugins can be chosen for each output plugin."
 msgstr ""
-"An output plugin is typically *buffered*. A buffered output plugin instructs "
-"Fluentd to accumulate event logs in a buffer before writing chunks of data "
-"out to a file or network. The buffer's behavior is defined by a separate "
-"buffer plugin. Different buffer plugins can be chosen for each output plugin."
 
 # 4d244b4446174795bf7915f3142d8dfd
 #: ../../plugin.rst:31
 msgid "Some output plugins are fully customized and do not use buffers."
-msgstr "Some output plugins are fully customized and do not use buffers."
+msgstr ""
 
 # 02b0e0be6ea04c148c7afc1d664119aa
 #: ../../plugin.rst:34
 msgid "Defines the implementation of a buffer."
-msgstr "Defines the implementation of a buffer."
+msgstr ""
 
 # 305ddc6dac6d4c3bac7831f5aad30cf2
 #: ../../plugin.rst:36
@@ -111,18 +97,16 @@ msgid ""
 "The user should choose the appropriate buffer plugin for the desired "
 "combination of performance and reliability."
 msgstr ""
-"The user should choose the appropriate buffer plugin for the desired "
-"combination of performance and reliability."
 
 # 9ed886d2809c4c23b403391197d1bf97
 #: ../../plugin.rst:43
 msgid "Input plugins"
-msgstr "Input plugins"
+msgstr ""
 
 # 248c322fe98f430c82ac283d9466598e
 #: ../../plugin.rst:46
 msgid "http"
-msgstr "http"
+msgstr ""
 
 # 77f04681ce234b5aac0d078824d8c1a4
 #: ../../plugin.rst:48
@@ -131,70 +115,67 @@ msgid ""
 "becomes the *tag* of the Fluentd event log, and the POSTed body element "
 "becomes the *record* of the Fluentd event log."
 msgstr ""
-"The **http** input plugin allows Fluentd to listen to HTTP clients. The URL "
-"becomes the *tag* of the Fluentd event log, and the POSTed body element "
-"becomes the *record* of the Fluentd event log."
 
 # bf72d312964545d9b091e00e67c1126c
 #: ../../plugin.rst:51
 msgid "Parameter"
-msgstr "Parameter"
+msgstr ""
 
 # 4944102d867647c1b7ae259a7b4e50da
 #: ../../plugin.rst:51
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 # 89c2619975c44d9d8b7e12541a3ac937
 #: ../../plugin.rst:51
 msgid "Required?"
-msgstr "Required?"
+msgstr ""
 
 # 70edf026b68741a6ba4ec57c713b72ce
 #: ../../plugin.rst:53
 msgid "json"
-msgstr "json"
+msgstr ""
 
 # ef37e5ab90fc47449a2ff9f02a834fc2
 #: ../../plugin.rst:53
 msgid "body of the event in JSON format"
-msgstr "body of the event in JSON format"
+msgstr ""
 
 # 09b98be25740427c87b790f799896143
 # 9c30c6cb0af34dc6b43ee9fb05a96312
 #: ../../plugin.rst:53 ../../plugin.rst:55
 msgid "either 'msgpack' or 'json'"
-msgstr "either 'msgpack' or 'json'"
+msgstr ""
 
 # 92f1b57168a44581a8542c0a59fdd90e
 #: ../../plugin.rst:55
 msgid "msgpack"
-msgstr "msgpack"
+msgstr ""
 
 # 919ad20b80c947a8b0b8541b4a618285
 #: ../../plugin.rst:55
 msgid "body of the event in `MessagePack <http://msgpack.org/>`_ format"
-msgstr "body of the event in `MessagePack <http://msgpack.org/>`_ format"
+msgstr ""
 
 # 3d351dc3d52744f493b474a0e2c7bda9
 #: ../../plugin.rst:57
 msgid "time"
-msgstr "time"
+msgstr ""
 
 # b5700e276c854ca396e26a5181dc297b
 #: ../../plugin.rst:57
 msgid "time of the event in integer (UNIX time)"
-msgstr "time of the event in integer (UNIX time)"
+msgstr ""
 
 # 6fea4444bde346b48479e5f300942142
 #: ../../plugin.rst:57
 msgid "no"
-msgstr "no"
+msgstr ""
 
 # 8b7ba4e4e1fa457fbb229dbe079cd366
 #: ../../plugin.rst:60
 msgid "**example**::"
-msgstr "**example**::"
+msgstr ""
 
 # 6d5ca60f00524ba3b4d2cdf6881626ed
 # 32aa493a94c8492abadbb282ee0d1903
@@ -216,22 +197,22 @@ msgstr "**example**::"
 #: ../../plugin.rst:566 ../../plugin.rst:593 ../../plugin.rst:607
 #: ../../plugin.rst:625 ../../plugin.rst:638
 msgid "**configuration**::"
-msgstr "**configuration**::"
+msgstr ""
 
 # ee18ece8ccb04b839051eda7caf34977
 #: ../../plugin.rst:79
 msgid "The port to listen on. Default Value = 9880"
-msgstr "The port to listen on. Default Value = 9880"
+msgstr ""
 
 # 0c930c64c32b4c948a230426830741f7
 #: ../../plugin.rst:83
 msgid "The bind address to listen on. Default Value = 0.0.0.0 (all addresses)"
-msgstr "The bind address to listen on. Default Value = 0.0.0.0 (all addresses)"
+msgstr ""
 
 # 6ffc77feced8448e8181368cf6592103
 #: ../../plugin.rst:87
 msgid "The limit of the body size. Default Value = 32MB."
-msgstr "The limit of the body size. Default Value = 32MB."
+msgstr ""
 
 # 7775fde6163b4b328ad469cff03dbdf2
 #: ../../plugin.rst:91
@@ -239,13 +220,11 @@ msgid ""
 "The timeout limit for keeping the connection alive. Default Value = 10 "
 "seconds"
 msgstr ""
-"The timeout limit for keeping the connection alive. Default Value = 10 "
-"seconds"
 
 # 20adf383cf5145fdb5913cced565fd7a
 #: ../../plugin.rst:96
 msgid "tail"
-msgstr "tail"
+msgstr ""
 
 # 3d00329fb2564c68a018840e066b3300
 #: ../../plugin.rst:97
@@ -254,24 +233,21 @@ msgid ""
 "read events from the tail of text files. Its read behavior is analogous to "
 "the ``tail -F`` command."
 msgstr ""
-"..I think an example would help. The **tail** input plugin allows Fluentd to "
-"read events from the tail of text files. Its read behavior is analogous to "
-"the ``tail -F`` command."
 
 # 8612bb1aedba4b00b300722e60e0e87b
 #: ../../plugin.rst:110
 msgid "Paths separated with ',' to read. This parameter is required."
-msgstr "Paths separated with ',' to read. This parameter is required."
+msgstr ""
 
 # 24096207e1a04cb29719f423d2b079d6
 #: ../../plugin.rst:113
 msgid "Tag of the event. This parameter is required."
-msgstr "Tag of the event. This parameter is required."
+msgstr ""
 
 # 2cb84d709ba548cba58252489ebfdabb
 #: ../../plugin.rst:116
 msgid "Format of the log. It's name of a template or regexp surround by '/'."
-msgstr "Format of the log. It's name of a template or regexp surround by '/'."
+msgstr ""
 
 # 951216fa4b59457b9d50e94f8709f4a5
 #: ../../plugin.rst:118
@@ -281,15 +257,11 @@ msgid ""
 "format of the time using *time_format* parameter. If the regexp has capture "
 "named 'tag', *tag* parameter + captured tag is used as the tag of the event."
 msgstr ""
-"Regexp must have at least one named captures (?<NAME>PATTERN). If the regexp "
-"has capture named 'time', it is used as a time of the event. You can specify "
-"format of the time using *time_format* parameter. If the regexp has capture "
-"named 'tag', *tag* parameter + captured tag is used as the tag of the event."
 
 # bc7196ba07914fe0ab8865c31f16eec4
 #: ../../plugin.rst:120
 msgid "Following templates are supported:"
-msgstr "Following templates are supported:"
+msgstr ""
 
 # 7d20440310bb4ebd89120c0e5bb303e2
 #: ../../plugin.rst:123
@@ -298,9 +270,6 @@ msgid ""
 "*size*, *referer* and *agent* fields. This template is same as following "
 "configuration::"
 msgstr ""
-"Reads apache's log file *host*, *user*, *time*, *method*, *path*, *code*, "
-"*size*, *referer* and *agent* fields. This template is same as following "
-"configuration::"
 
 # c2ac8771ca1546cea2797062fe1b1dc5
 #: ../../plugin.rst:129
@@ -308,8 +277,6 @@ msgid ""
 "Reads syslog's output file (e.g. /var/log/syslog) *time*, *host*, *ident*, "
 "*message* fields. This template is same as following configuration::"
 msgstr ""
-"Reads syslog's output file (e.g. /var/log/syslog) *time*, *host*, *ident*, "
-"*message* fields. This template is same as following configuration::"
 
 # 8ca664aa4fc348f6abbdb98f81016d09
 #: ../../plugin.rst:135
@@ -319,10 +286,6 @@ msgid ""
 "`Time#strptime <http://www.ruby-doc.org/core-1.9/classes/Time."
 "html#M000326>`_."
 msgstr ""
-"Format of the time field. This parameter is required only if the format "
-"includes 'time' capture and it can't be parsed automatically. See "
-"`Time#strptime <http://www.ruby-doc.org/core-1.9/classes/Time."
-"html#M000326>`_."
 
 # 7f55a994ee9749bab9383e57f527c221
 #: ../../plugin.rst:139
@@ -336,20 +299,12 @@ msgid ""
 "seconds. The rotate_wait parameter accepts a single integer which represents "
 "the number of seconds you want to set this time interval to."
 msgstr ""
-"in_tail does a bit more than \"tail -F\". When one is rotating a file, there "
-"is a possibility that some data might still need to be written to the old "
-"file as opposed to the new one. in_tail takes care of this by keeping a "
-"reference to the old file (even after it's been rotated) for some time "
-"before transitioning to the new file entirely (so that the data designated "
-"for the old file don't get lost). By default, this time interval is 5 "
-"seconds. The rotate_wait parameter accepts a single integer which represents "
-"the number of seconds you want to set this time interval to."
 
 # db225351ca2f40868d5aa46760e1ebe9
 # 2c8fc20f772244a494a18b775d0fd263
 #: ../../plugin.rst:175 ../../plugin.rst:368
 msgid "forward"
-msgstr "forward"
+msgstr ""
 
 # 2e7d51ee14a2414e8acd7535b60da637
 #: ../../plugin.rst:177
@@ -359,31 +314,27 @@ msgid ""
 "receive event logs from other fluentd, ``fluent-cat`` command or client "
 "libraries."
 msgstr ""
-"**forward** input plugin listens TCP socket to receive event stream, and "
-"also listens UDP socket to receive heartbeat message. This is used to "
-"receive event logs from other fluentd, ``fluent-cat`` command or client "
-"libraries."
 
 # ede97ef7a42145849c8a258ec63128a1
 #: ../../plugin.rst:188
 msgid "port to listen on (both TCP and UDP). Default is 24224."
-msgstr "port to listen on (both TCP and UDP). Default is 24224."
+msgstr ""
 
 # ec17b79b71f7461293d7ff3ce356e936
 #: ../../plugin.rst:191
 msgid "bind address to listen on. Default is 0.0.0.0 (all addresses)."
-msgstr "bind address to listen on. Default is 0.0.0.0 (all addresses)."
+msgstr ""
 
 # a4f4605528a4403da9c93b932c8aa79c
 #: ../../plugin.rst:194
 msgid "This plugin uses MessagePack for the protocol::"
-msgstr "This plugin uses MessagePack for the protocol::"
+msgstr ""
 
 # 8fae503f93a644b59175412d6f00472b
 # abb03c0613bc4e93960f4c6d70716606
 #: ../../plugin.rst:227 ../../plugin.rst:460
 msgid "exec"
-msgstr "exec"
+msgstr ""
 
 # 0c0007f8d2c84b6da0963d6b58c3ae2b
 #: ../../plugin.rst:229
@@ -391,8 +342,6 @@ msgid ""
 "**exec** input plugin executes external program to receive or pull event "
 "logs. This reads TSV (tab separated values) from the stdout of the program."
 msgstr ""
-"**exec** input plugin executes external program to receive or pull event "
-"logs. This reads TSV (tab separated values) from the stdout of the program."
 
 # 8005d549ecc246768935efab72162081
 #: ../../plugin.rst:231
@@ -400,23 +349,21 @@ msgid ""
 "You can run the program periodically or permanently. To run periodically, "
 "use ``run_interval`` parameter."
 msgstr ""
-"You can run the program periodically or permanently. To run periodically, "
-"use ``run_interval`` parameter."
 
 # f26207ec76cc403b86361c8fc8c0d4f5
 #: ../../plugin.rst:247
 msgid "The command to execute."
-msgstr "The command to execute."
+msgstr ""
 
 # 9f248404a232486bb2def0a29ee5c2dc
 #: ../../plugin.rst:250
 msgid "Column names of the output TSV."
-msgstr "Column names of the output TSV."
+msgstr ""
 
 # 45959ab5cc2145c69790cce965630a4e
 #: ../../plugin.rst:253
 msgid "tag of the output events."
-msgstr "tag of the output events."
+msgstr ""
 
 # f4ac6300a13e456b99ac2f2986520266
 #: ../../plugin.rst:256
@@ -424,8 +371,6 @@ msgid ""
 "Name of the key to use as the event tag instead of the value in the event "
 "record. If this parameter is not specified, it uses the ``tag`` parameter."
 msgstr ""
-"Name of the key to use as the event tag instead of the value in the event "
-"record. If this parameter is not specified, it uses the ``tag`` parameter."
 
 # 8dad088970bb4913952cd9ce3003f1e6
 #: ../../plugin.rst:259
@@ -433,8 +378,6 @@ msgid ""
 "Name of the key to use as the event time instead of the value in the event "
 "record. If this parameter is not specified, it uses the current time."
 msgstr ""
-"Name of the key to use as the event time instead of the value in the event "
-"record. If this parameter is not specified, it uses the current time."
 
 # d9ac9d14df1946cabef3e6dd8e8d4b38
 # 17245696e5f94202b72ae19aaa7a9893
@@ -443,18 +386,16 @@ msgid ""
 "Format of the event time used when the ``time_key`` parameter is specified. "
 "Default is UNIX time (integer)."
 msgstr ""
-"Format of the event time used when the ``time_key`` parameter is specified. "
-"Default is UNIX time (integer)."
 
 # deca2b83caea48e2b6f566527f0a2ad4
 #: ../../plugin.rst:265
 msgid "Runs the program periodically in the specified interval."
-msgstr "Runs the program periodically in the specified interval."
+msgstr ""
 
 # bc26da3f14b3483998891142889dc75d
 #: ../../plugin.rst:271
 msgid "Buffered output plugins"
-msgstr "Buffered output plugins"
+msgstr ""
 
 # c9df8de61f2f455b98cb9f6005bb4c65
 #: ../../plugin.rst:273
@@ -462,13 +403,11 @@ msgid ""
 "Most of output plugins are *buffered* which accumulates new events on memory "
 "or files."
 msgstr ""
-"Most of output plugins are *buffered* which accumulates new events on memory "
-"or files."
 
 # bbefa6bbebc843a4b2a167dca3f0d2ed
 #: ../../plugin.rst:275
 msgid "The structure of the buffer is a queue of chunks like following::"
-msgstr "The structure of the buffer is a queue of chunks like following::"
+msgstr ""
 
 # 59e1dd298e6746b4a867ed050c360242
 #: ../../plugin.rst:290
@@ -477,9 +416,6 @@ msgid ""
 "elapsed (*flush_interval*), new empty chunk is pushed. The bottom chunk is "
 "written out immediately when new chunk is pushed."
 msgstr ""
-"When chunk size exceeds limit (*buffer_chunk_limit*) or specified time "
-"elapsed (*flush_interval*), new empty chunk is pushed. The bottom chunk is "
-"written out immediately when new chunk is pushed."
 
 # af33ebf5b5c143e2b17ab4eae550732b
 #: ../../plugin.rst:293
@@ -490,25 +426,18 @@ msgid ""
 "increases twice and twice (1.0sec, 2.0sec, 4.0sec, ...). If the length of "
 "the queue exceeds limit (*buffer_queue_limit*), new events are rejected."
 msgstr ""
-"If it failed to write, the chunk is left in the queue and retried to write "
-"after seconds (*retry_wait*). If the retry count is exceeds limit "
-"(*retry_limit*), the chunk is trashed. The wait time before retrying "
-"increases twice and twice (1.0sec, 2.0sec, 4.0sec, ...). If the length of "
-"the queue exceeds limit (*buffer_queue_limit*), new events are rejected."
 
 # b88540d7ffcc4b48956d45d40e543f09
 #: ../../plugin.rst:297
 msgid ""
 "All buffered output plugins supports following parameters described above::"
 msgstr ""
-"All buffered output plugins supports following parameters described above::"
 
 # 3a529b3df33e43248dc783d754140b7c
 #: ../../plugin.rst:308
 msgid ""
 "*buffer_type* specifies the type of buffer plugin. Default is ``memory``."
 msgstr ""
-"*buffer_type* specifies the type of buffer plugin. Default is ``memory``."
 
 # d2e260d50b4643b7acd06fe6548dae19
 #: ../../plugin.rst:310
@@ -516,8 +445,6 @@ msgid ""
 "Suffixes \"s\" (seconds), \"m\" (minutes), \"h\" (hours) can be used for "
 "*flush_interval* and *retry_wait*. *retry_wait* can be a decimal."
 msgstr ""
-"Suffixes \"s\" (seconds), \"m\" (minutes), \"h\" (hours) can be used for "
-"*flush_interval* and *retry_wait*. *retry_wait* can be a decimal."
 
 # 10f8603a8ebd4192802611cbb451b201
 #: ../../plugin.rst:312
@@ -525,14 +452,12 @@ msgid ""
 "Suffixes \"k\" (KB), \"m\" (MB), \"g\" (GB) can be used for "
 "*buffer_chunk_limit*."
 msgstr ""
-"Suffixes \"k\" (KB), \"m\" (MB), \"g\" (GB) can be used for "
-"*buffer_chunk_limit*."
 
 # 1d28495a36354b6381b4f598b89f4520
 # c67dd004d7634054b1c7fd209d50ced3
 #: ../../plugin.rst:316 ../../plugin.rst:633
 msgid "file"
-msgstr "file"
+msgstr ""
 
 # 964b734eea314aff8cca25ffa56b68c4
 #: ../../plugin.rst:318
@@ -542,10 +467,6 @@ msgid ""
 "are created. If you want to output the logs hourly or minutely, please "
 "modify 'time_slice_format' value."
 msgstr ""
-"**file** buffered output plugin writes events to files. By default, it "
-"writes into the file in daily basis (almost at 00:10). Before that, no files "
-"are created. If you want to output the logs hourly or minutely, please "
-"modify 'time_slice_format' value."
 
 # 10c95216437748f9a8d754db656c7088
 #: ../../plugin.rst:333
@@ -553,68 +474,66 @@ msgid ""
 "Path of the file. Actual path becomes path + time + \".log\". See also "
 "``time_slice_format`` parameter descried below."
 msgstr ""
-"Path of the file. Actual path becomes path + time + \".log\". See also "
-"``time_slice_format`` parameter descried below."
 
 # 61ded2b7845646298f5558d451153cb9
 #: ../../plugin.rst:338
 msgid "%Y"
-msgstr "%Y"
+msgstr ""
 
 # a5924e52cbd14a44ac86598525efeee8
 #: ../../plugin.rst:338
 msgid "Year with century"
-msgstr "Year with century"
+msgstr ""
 
 # 07bfb8ac8dee454588d26b40c631cdd9
 #: ../../plugin.rst:340
 msgid "%m"
-msgstr "%m"
+msgstr ""
 
 # bbe7519130b54bc7a55b635d2b756d37
 #: ../../plugin.rst:340
 msgid "Month of the year (01..12)"
-msgstr "Month of the year (01..12)"
+msgstr ""
 
 # dc701e785e3e4f649c79cce4285970be
 #: ../../plugin.rst:342
 msgid "%d"
-msgstr "%d"
+msgstr ""
 
 # 3860541d6fd14ffe9d4024444345035e
 #: ../../plugin.rst:342
 msgid "Day of the month (01..31)"
-msgstr "Day of the month (01..31)"
+msgstr ""
 
 # 4126c7029f3949889e31f40c93bf50e3
 #: ../../plugin.rst:344
 msgid "%H"
-msgstr "%H"
+msgstr ""
 
 # 03806eb8ca1549698b7eedf115f7475d
 #: ../../plugin.rst:344
 msgid "Hour of the day, 24-hour clock (00..23)"
-msgstr "Hour of the day, 24-hour clock (00..23)"
+msgstr ""
 
 # 19894c565e044ee0ba4288c6d9e9d0cd
 #: ../../plugin.rst:346
 msgid "%M"
-msgstr "%M"
+msgstr ""
 
 # 85ec094e59ee437e8fb99ab9fbe3ae29
 #: ../../plugin.rst:346
 msgid "Minute of the hour (00..59)"
-msgstr "Minute of the hour (00..59)"
+msgstr ""
 
 # f01248f66f2c4fa3ade8809ba73a0932
 #: ../../plugin.rst:348
 msgid "%S"
-msgstr "%S"
+msgstr ""
 
 # 6c5520c1cee049a4802b39f95118f6d5
 #: ../../plugin.rst:348
 msgid "Second of the minute (00..60)"
-msgstr "Second of the minute (00..60)"
+msgstr ""
 
 # dc5d67b952ef404188ff114ce7732f08
 #: ../../plugin.rst:350
@@ -622,23 +541,21 @@ msgid ""
 "Default is ``%Y%m%d`` which splits files every day. Use ``%Y%m%d%H`` to "
 "split files every hour."
 msgstr ""
-"Default is ``%Y%m%d`` which splits files every day. Use ``%Y%m%d%H`` to "
-"split files every hour."
 
 # a54d5c1ec7f34402b685f24e546115d4
 #: ../../plugin.rst:353
 msgid "Wait time before flushing the buffer. Default is 10 minutes."
-msgstr "Wait time before flushing the buffer. Default is 10 minutes."
+msgstr ""
 
 # 0d1ea3474a064e4a95733892684fbeb2
 #: ../../plugin.rst:356
 msgid "Format of the time written in files. Default is ISO-8601."
-msgstr "Format of the time written in files. Default is ISO-8601."
+msgstr ""
 
 # 1924ae98649d4763a8197e3c9a035dda
 #: ../../plugin.rst:359
 msgid "Uses UTC for path formatting. Default is localtime."
-msgstr "Uses UTC for path formatting. Default is localtime."
+msgstr ""
 
 # 3fe6adb91d434f91bb534cc4631abbb0
 #: ../../plugin.rst:362
@@ -646,20 +563,17 @@ msgid ""
 "Compress flushed files. Supported algorithm is gzip. Default is no-"
 "compression."
 msgstr ""
-"Compress flushed files. Supported algorithm is gzip. Default is no-"
-"compression."
 
 # ec65660b24cd4a758cdf9f06198e332b
 #: ../../plugin.rst:364
 msgid "Note that this output plugin uses file buffer by default."
-msgstr "Note that this output plugin uses file buffer by default."
+msgstr ""
 
 # 74f2698ed631467c879e6f10a1bfe79e
 #: ../../plugin.rst:370
 msgid ""
 "**forward** buffered output plugin forwards events to other fluentd servers."
 msgstr ""
-"**forward** buffered output plugin forwards events to other fluentd servers."
 
 # 498aa5ffa4544a46beba00f520bcbfec
 #: ../../plugin.rst:372
@@ -667,8 +581,6 @@ msgid ""
 "This plugin supports load-balancing and automatic fail-over (a.k.a. active-"
 "active backup). If you want replication, use ``copy`` plugin described below."
 msgstr ""
-"This plugin supports load-balancing and automatic fail-over (a.k.a. active-"
-"active backup). If you want replication, use ``copy`` plugin described below."
 
 # 3e692145b4bb49ad88761a18399bfec4
 #: ../../plugin.rst:374
@@ -676,8 +588,6 @@ msgid ""
 "It detects fault of a server using \"φ accrual failure detector\" algorithm. "
 "You can customize parameter of the algorithm."
 msgstr ""
-"It detects fault of a server using \"φ accrual failure detector\" algorithm. "
-"You can customize parameter of the algorithm."
 
 # 0b88c818c8b94e2aaa030f6dcf6fd8ea
 #: ../../plugin.rst:376
@@ -685,23 +595,21 @@ msgid ""
 "When a fault server recovers, the plugin makes it available automatically "
 "after several seconds."
 msgstr ""
-"When a fault server recovers, the plugin makes it available automatically "
-"after several seconds."
 
 # 43b685b440064c5cbbf0b275a985a73b
 #: ../../plugin.rst:410
 msgid "Description of a server."
-msgstr "Description of a server."
+msgstr ""
 
 # 59d07d6ce3d84a178d223124caaf4dce
 #: ../../plugin.rst:413
 msgid "Name of the server. This parameter is used in error messages."
-msgstr "Name of the server. This parameter is used in error messages."
+msgstr ""
 
 # 2f527390a77c49c2a33cb53050f0c1f0
 #: ../../plugin.rst:416
 msgid "IP address or host name of the server. This parameters is required."
-msgstr "IP address or host name of the server. This parameters is required."
+msgstr ""
 
 # c736740f59884cc69099c3885a1dc71d
 #: ../../plugin.rst:419
@@ -709,8 +617,6 @@ msgid ""
 "Port number of the host. Default is 24224. Note that both TCP packets (event "
 "stream) and UDP packets (heartbeat message) are sent to this port."
 msgstr ""
-"Port number of the host. Default is 24224. Note that both TCP packets (event "
-"stream) and UDP packets (heartbeat message) are sent to this port."
 
 # a11a9c0f20884b18bf872faaf953dcdb
 #: ../../plugin.rst:422
@@ -718,30 +624,27 @@ msgid ""
 "Weight of load balancing. For example, weight of a server is 20 and weight "
 "of the other server is 30, events are sent in 2:3 raito. Default is 60."
 msgstr ""
-"Weight of load balancing. For example, weight of a server is 20 and weight "
-"of the other server is 30, events are sent in 2:3 raito. Default is 60."
 
 # b1e88f0ac37d45c4914607e5f80f0cf9
 #: ../../plugin.rst:425
 msgid "Timeout time to send event logs. Default is 60 seconds."
-msgstr "Timeout time to send event logs. Default is 60 seconds."
+msgstr ""
 
 # 1fc24b237f99426a8bd920894d5d9002
 #: ../../plugin.rst:428
 msgid ""
 "Wait time before accepting recovery of a fault server. Default is 10 seconds."
 msgstr ""
-"Wait time before accepting recovery of a fault server. Default is 10 seconds."
 
 # 62e3633531f443dd9e9e255f212d2945
 #: ../../plugin.rst:431
 msgid "Interval of heartbeat packer. Default is 1 second."
-msgstr "Interval of heartbeat packer. Default is 1 second."
+msgstr ""
 
 # 81832917d6cd41078ebbe9706f4f7573
 #: ../../plugin.rst:434
 msgid "Threshold parameter to detect fault of a server. Default is 8."
-msgstr "Threshold parameter to detect fault of a server. Default is 8."
+msgstr ""
 
 # e6b8a386b15e4dcfbceb580e29ff7652
 #: ../../plugin.rst:437
@@ -749,8 +652,6 @@ msgid ""
 "Hard timeout to detect failure of a server. Default is same as the "
 "``send_timeout`` parameter."
 msgstr ""
-"Hard timeout to detect failure of a server. Default is same as the "
-"``send_timeout`` parameter."
 
 # 4dd3083cca3f4e30b5b23452b1a1835a
 #: ../../plugin.rst:440
@@ -758,8 +659,6 @@ msgid ""
 "Backup destination which is used when all servers are not available. This "
 "parameter is optional."
 msgstr ""
-"Backup destination which is used when all servers are not available. This "
-"parameter is optional."
 
 # 857ac4bade8e45278f18a36b7ffbacb2
 #: ../../plugin.rst:462
@@ -767,8 +666,6 @@ msgid ""
 "The **exec** buffered output plugin passes events to an external program as "
 "a tab-separated value (TSV) file."
 msgstr ""
-"The **exec** buffered output plugin passes events to an external program as "
-"a tab-separated value (TSV) file."
 
 # ba04954c818040a397cef3fa9bb535cf
 #: ../../plugin.rst:464
@@ -776,8 +673,6 @@ msgid ""
 "The command is passed the location of a TSV file containing incoming events "
 "as its last argument."
 msgstr ""
-"The command is passed the location of a TSV file containing incoming events "
-"as its last argument."
 
 # b6acc38efc3d4dec99c8913eec25b796
 #: ../../plugin.rst:478
@@ -785,13 +680,11 @@ msgid ""
 "A command to execute. The exec plugin passes the path of a TSV file as the "
 "last argument."
 msgstr ""
-"A command to execute. The exec plugin passes the path of a TSV file as the "
-"last argument."
 
 # bfd7b78129b244eda3ab6642510be730
 #: ../../plugin.rst:481
 msgid "Comma-separated keys to use in the TSV file."
-msgstr "Comma-separated keys to use in the TSV file."
+msgstr ""
 
 # 5034f2fe6b1a45f294a9a1d61843c0ba
 # cb326aa06b7c4fd09d0e72e4ad8bd0ce
@@ -800,8 +693,6 @@ msgid ""
 "Name of the key to use as the event tag instead of the value in the event "
 "record."
 msgstr ""
-"Name of the key to use as the event tag instead of the value in the event "
-"record."
 
 # 7e3cf28f53154f59853155acccfce3a7
 # d39afca30ab94442ab2e4bc0f6e61efb
@@ -810,8 +701,6 @@ msgid ""
 "Name of the key to use as the event time instead of the value in the event "
 "record."
 msgstr ""
-"Name of the key to use as the event time instead of the value in the event "
-"record."
 
 # 2a1accb3dc5e4483b7d3721c0effadab
 #: ../../plugin.rst:490
@@ -819,13 +708,11 @@ msgid ""
 "Format for event time used when the ``time_key`` parameter is specified. "
 "Default is UNIX time (integer)."
 msgstr ""
-"Format for event time used when the ``time_key`` parameter is specified. "
-"Default is UNIX time (integer)."
 
 # 77a4e7c74f584f8c858e309280b60cb8
 #: ../../plugin.rst:494
 msgid "exec_filter"
-msgstr "exec_filter"
+msgstr ""
 
 # 05bceec961554a5f8d9ab784bed08c07
 #: ../../plugin.rst:496
@@ -833,15 +720,12 @@ msgid ""
 "**exec_filter** buffered output plugin executes an external program, using "
 "events as input and reading new events from the program output."
 msgstr ""
-"**exec_filter** buffered output plugin executes an external program, using "
-"events as input and reading new events from the program output."
 
 # 33da7b7cc07148d4b9f3ca27f4f30353
 #: ../../plugin.rst:498
 msgid ""
 "It passes tab-separated values (TSV) to stdin and reads TSV from stdout."
 msgstr ""
-"It passes tab-separated values (TSV) to stdin and reads TSV from stdout."
 
 # 57921d6ab17e4e76ad76a99122e465ca
 #: ../../plugin.rst:513
@@ -849,8 +733,6 @@ msgid ""
 "A command to execute. The exec plugin passes a path of TSV file to the last "
 "argument."
 msgstr ""
-"A command to execute. The exec plugin passes a path of TSV file to the last "
-"argument."
 
 # ec97e24db48c4de294caa2ee779aeae2
 #: ../../plugin.rst:516
@@ -858,41 +740,38 @@ msgid ""
 "Comma-separated keys to use from the incoming event for the TSV input to the "
 "command."
 msgstr ""
-"Comma-separated keys to use from the incoming event for the TSV input to the "
-"command."
 
 # e13be457d266476ca999327cb9bbf076
 #: ../../plugin.rst:519
 msgid ""
 "Comma-separated keys to use in processing the TSV output from the program."
 msgstr ""
-"Comma-separated keys to use in processing the TSV output from the program."
 
 # d9e29471c2364219a1e568558ed6fe2d
 #: ../../plugin.rst:532
 msgid "Non-buffered output plugins"
-msgstr "Non-buffered output plugins"
+msgstr ""
 
 # b557b20317904446b233fe8cf93d72ba
 #: ../../plugin.rst:535
 msgid "copy"
-msgstr "copy"
+msgstr ""
 
 # 50c372b001294b688a9b6123f6b8b77c
 #: ../../plugin.rst:537
 msgid "**copy** output plugin copies events to multiple outputs."
-msgstr "**copy** output plugin copies events to multiple outputs."
+msgstr ""
 
 # 077f02167edc4421a2979b932fc7b35f
 # f18a9073fed74e2f8fb92415b52a630c
 #: ../../plugin.rst:558 ../../plugin.rst:585
 msgid "Specifies output plugin. The format is same as <match> directive."
-msgstr "Specifies output plugin. The format is same as <match> directive."
+msgstr ""
 
 # 8774f6fa66544d04bf70be2a15585ce0
 #: ../../plugin.rst:562
 msgid "roundrobin"
-msgstr "roundrobin"
+msgstr ""
 
 # b382c8abda444916bee7b89eba7852bc
 #: ../../plugin.rst:564
@@ -900,43 +779,41 @@ msgid ""
 "**roundrobin** output plugin distributes events to multiple outputs using "
 "round-robin algorithm."
 msgstr ""
-"**roundrobin** output plugin distributes events to multiple outputs using "
-"round-robin algorithm."
 
 # 70183463ab68478496fbe229441c654d
 #: ../../plugin.rst:589
 msgid "stdout"
-msgstr "stdout"
+msgstr ""
 
 # fa547d264d884ad2a827511b4a49b067
 #: ../../plugin.rst:591
 msgid "**stdout** output plugin prints event to the console."
-msgstr "**stdout** output plugin prints event to the console."
+msgstr ""
 
 # 8baf95c8abf1449ab4b1ec01eee804ed
 #: ../../plugin.rst:599
 msgid "This output plugin is for debugging."
-msgstr "This output plugin is for debugging."
+msgstr ""
 
 # 9ad4d30cb1d6454b90699344c6c519d2
 #: ../../plugin.rst:603
 msgid "null"
-msgstr "null"
+msgstr ""
 
 # 0d640b0bbd4e48c2818738bb03810e4f
 #: ../../plugin.rst:605
 msgid "**null** output plugin just throw away events."
-msgstr "**null** output plugin just throw away events."
+msgstr ""
 
 # 993992a944da4953bf42888479aec2c7
 #: ../../plugin.rst:617
 msgid "Buffer plugins"
-msgstr "Buffer plugins"
+msgstr ""
 
 # ac5f6e5ceca2451191bd1f8faef5b8b9
 #: ../../plugin.rst:620
 msgid "memory"
-msgstr "memory"
+msgstr ""
 
 # 1cfe235b4ccf4205a2b687d1dcc56939
 #: ../../plugin.rst:622
@@ -945,9 +822,6 @@ msgid ""
 "to store buffer chunks. Buffered events which can't be written soon are "
 "deleted when fluentd is shut down."
 msgstr ""
-"**memory** buffer plugin provides fast buffer implementation. It uses memory "
-"to store buffer chunks. Buffered events which can't be written soon are "
-"deleted when fluentd is shut down."
 
 # c33ddc9a5baa49c88d9f2ba197e7673d
 #: ../../plugin.rst:635
@@ -955,8 +829,6 @@ msgid ""
 "**file** buffer plugin provides persistent buffer implementation. It uses "
 "file to store buffer chunks."
 msgstr ""
-"**file** buffer plugin provides persistent buffer implementation. It uses "
-"file to store buffer chunks."
 
 # 32900356e3b4419e89c604ec6af43361
 #: ../../plugin.rst:646
@@ -964,13 +836,11 @@ msgid ""
 "Path to store buffer chunks. '*' is replaced with random characters. This "
 "parameter is required."
 msgstr ""
-"Path to store buffer chunks. '*' is replaced with random characters. This "
-"parameter is required."
 
 # 2a24e71e363d4708a13e896ccdc0bdea
 #: ../../plugin.rst:653
 msgid "Searching plugins"
-msgstr "Searching plugins"
+msgstr ""
 
 # b15e7cb0b4e141699bc2ed5fd7174051
 #: ../../plugin.rst:655
@@ -978,20 +848,18 @@ msgid ""
 "You can find plugins released on RubyGems at the `Fluentd plugins <http://"
 "fluentd.org/plugin/>`_ page."
 msgstr ""
-"You can find plugins released on RubyGems at the `Fluentd plugins <http://"
-"fluentd.org/plugin/>`_ page."
 
 # cb02eb31dbd8411ea7d0af846a290aa9
 #: ../../plugin.rst:657
 msgid "You can also use following command to search plugins::"
-msgstr "You can also use following command to search plugins::"
+msgstr ""
 
 # 9ea9b6b33ad9455ba94b994074c3cc01
 #: ../../plugin.rst:661
 msgid "Type following command to install it::"
-msgstr "Type following command to install it::"
+msgstr ""
 
 # 98019f823169400ab11c61b7ecbab5fa
 #: ../../plugin.rst:665
 msgid "Next step: :ref:`devel`"
-msgstr "Next step: :ref:`devel`"
+msgstr ""

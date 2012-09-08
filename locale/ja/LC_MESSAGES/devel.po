@@ -1,4 +1,4 @@
-# English translations for fluentd package.
+# Japanese translations for fluentd package.
 # Copyright (C) 2011, Sadayuki Furuhashi
 # This file is distributed under the same license as the fluentd package.
 #  <mazgi@gensole>, 2012.
@@ -8,31 +8,30 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-08 21:04+0900\n"
+"PO-Revision-Date: 2012-09-08 21:05+0900\n"
 "Last-Translator:  <mazgi@gensole>\n"
-"Language-Team: English\n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 # 509eb114c89b49e5b847be2264fd90e7
 #: ../../devel.rst:4
 msgid "Writing plugins"
-msgstr "Writing plugins"
+msgstr ""
 
 # b3bc69641f8b44638141be9d9198d944
 #: ../../devel.rst:11
 msgid "Installing custom plugins"
-msgstr "Installing custom plugins"
+msgstr ""
 
 # 6d789307eeaf488ea7e6ea2a4b3d1f54
 #: ../../devel.rst:13
 msgid ""
 "To install a plugin, put a ruby script to ``/etc/fluent/plugin`` directory."
 msgstr ""
-"To install a plugin, put a ruby script to ``/etc/fluent/plugin`` directory."
 
 # 18e6c8d900f741128fac3d6600fe4f29
 #: ../../devel.rst:15
@@ -43,21 +42,16 @@ msgid ""
 "out_mail.rb``. The packaged gem can be distributed and installed using "
 "RubyGems. See :ref:`search_plugin`."
 msgstr ""
-"Or you can create gem package that includes ``lib/fluent/plugin/"
-"<TYPE>_<NAME>.rb`` file. *TYPE* is ``in`` for input plugins, ``out`` for "
-"output plugins and ``buf`` for buffer plugins. It's like ``lib/fluent/plugin/"
-"out_mail.rb``. The packaged gem can be distributed and installed using "
-"RubyGems. See :ref:`search_plugin`."
 
 # 87d03ffcf873466e8ffda9625b8ac95d
 #: ../../devel.rst:19
 msgid "Input plugins"
-msgstr "Input plugins"
+msgstr ""
 
 # 64f3460191ba483ca8b54d9b65123338
 #: ../../devel.rst:21
 msgid "Extend **Fluent::Input** class and implement following methods."
-msgstr "Extend **Fluent::Input** class and implement following methods."
+msgstr ""
 
 # 40645cfb24b5464597313e1fc73938e2
 #: ../../devel.rst:53
@@ -66,9 +60,6 @@ msgid ""
 "where ``tag`` is the String, ``time`` is the UNIX time integer and "
 "``record`` is a Hash object."
 msgstr ""
-"To submit events, use ``Fluent::Engine.emit(tag, time, record)`` method, "
-"where ``tag`` is the String, ``time`` is the UNIX time integer and "
-"``record`` is a Hash object."
 
 # e9e3c826ccfe4f88bcac6fadbe37b4c0
 #: ../../devel.rst:62
@@ -76,25 +67,22 @@ msgid ""
 "RDoc of the Engine class is available from `Fluentd RDoc <http://fluentd.org/"
 "rdoc/Fluent/Engine.html>`_."
 msgstr ""
-"RDoc of the Engine class is available from `Fluentd RDoc <http://fluentd.org/"
-"rdoc/Fluent/Engine.html>`_."
 
 # aecb13dd0df045489fea94d70a01a056
 #: ../../devel.rst:66
 msgid "Buffered output plugins"
-msgstr "Buffered output plugins"
+msgstr ""
 
 # 0b8fc2e959e8478a8b76d8248b46e84b
 #: ../../devel.rst:68
 msgid ""
 "Extend **Fluent::BufferedOutput** class and implement following methods."
 msgstr ""
-"Extend **Fluent::BufferedOutput** class and implement following methods."
 
 # 5f0154f563fe43c5b3ca82869b744bf1
 #: ../../devel.rst:130
 msgid "Time sliced output plugins"
-msgstr "Time sliced output plugins"
+msgstr ""
 
 # a26cac635c8b41908e0f98691d885b44
 #: ../../devel.rst:132
@@ -102,8 +90,6 @@ msgid ""
 "Time sliced output plugins are extended version of buffered output plugin. "
 "One of the examples of time sliced output is ``out_file`` plugin."
 msgstr ""
-"Time sliced output plugins are extended version of buffered output plugin. "
-"One of the examples of time sliced output is ``out_file`` plugin."
 
 # 76d3874dcfa94d449a5e013c477360e0
 #: ../../devel.rst:134
@@ -111,8 +97,6 @@ msgid ""
 "Note that it uses file buffer by default. Thus ``buffer_path`` option is "
 "required."
 msgstr ""
-"Note that it uses file buffer by default. Thus ``buffer_path`` option is "
-"required."
 
 # 5222b408c9f84ccdbe1462d722e65241
 #: ../../devel.rst:136
@@ -120,33 +104,31 @@ msgid ""
 "To implement time sliced output plugin, Extend **Fluent::TimeSlicedOutput** "
 "class and implement following methods."
 msgstr ""
-"To implement time sliced output plugin, Extend **Fluent::TimeSlicedOutput** "
-"class and implement following methods."
 
 # f61d2791c0a54348b76ed725e833c5d8
 #: ../../devel.rst:155
 msgid "Non-buffered output plugins"
-msgstr "Non-buffered output plugins"
+msgstr ""
 
 # 29280b27ed1b417d81e786c45af12bc8
 #: ../../devel.rst:157
 msgid "Extend **Fluent::Output** class and implement following methods."
-msgstr "Extend **Fluent::Output** class and implement following methods."
+msgstr ""
 
 # 0279c0de216f4f74bec3f4cf4a26c23e
 #: ../../devel.rst:199
 msgid "Buffer plugins"
-msgstr "Buffer plugins"
+msgstr ""
 
 # ee946290233b4e5bb919ce3d1a6690ce
 #: ../../devel.rst:201
 msgid "TODO"
-msgstr "TODO"
+msgstr ""
 
 # 015f51478a804f80b0db869a1aaae228
 #: ../../devel.rst:205
 msgid "Custom parser for Tail input plugin"
-msgstr "Custom parser for Tail input plugin"
+msgstr ""
 
 # 1352811428a84659ad2dba12a1a986ea
 #: ../../devel.rst:207
@@ -154,28 +136,26 @@ msgid ""
 "You can customize text parser of Tail input plugin by extending **Fluent::"
 "TailInput** class."
 msgstr ""
-"You can customize text parser of Tail input plugin by extending **Fluent::"
-"TailInput** class."
 
 # ae101ee4b13c4de1b6c0236026254ea3
 #: ../../devel.rst:209
 msgid "Put following file to **/etc/fluent/plugin/in_mytail.rb**."
-msgstr "Put following file to **/etc/fluent/plugin/in_mytail.rb**."
+msgstr ""
 
 # ba4ba13e96c44759895588034fe270ab
 #: ../../devel.rst:243
 msgid "Use following configuration file::"
-msgstr "Use following configuration file::"
+msgstr ""
 
 # 886130df63d44dccaee373f7bf5d91b4
 #: ../../devel.rst:253
 msgid "Debugging plugins"
-msgstr "Debugging plugins"
+msgstr ""
 
 # 7d707a31da3a437e8f6107002ab3c8b1
 #: ../../devel.rst:255
 msgid "Run ``fluentd`` with ``-vv`` option to show debug messages::"
-msgstr "Run ``fluentd`` with ``-vv`` option to show debug messages::"
+msgstr ""
 
 # 0525ff0b5d2a48159e5aae7641168b47
 #: ../../devel.rst:259
@@ -184,9 +164,6 @@ msgid ""
 "output plugin dumps matched events to the console. It can be used as "
 "following::"
 msgstr ""
-"**stdout** and **copy** output plugins are useful for debugging. **stdout** "
-"output plugin dumps matched events to the console. It can be used as "
-"following::"
 
 # cdafcec245014e6889d8f5ca985a61c8
 #: ../../devel.rst:271
@@ -194,35 +171,33 @@ msgid ""
 "**copy** output plugin copies matched events to multiple output plugins. You "
 "can use it with the stdout plugin::"
 msgstr ""
-"**copy** output plugin copies matched events to multiple output plugins. You "
-"can use it with the stdout plugin::"
 
 # 85b01ab548b94c5da6601a53018b38da
 #: ../../devel.rst:295
 msgid "Writing test cases"
-msgstr "Writing test cases"
+msgstr ""
 
 # 6310c2691b854329a9cab61729abf905
 #: ../../devel.rst:297
 msgid "Fluentd provides unit test frameworks for plugins:"
-msgstr "Fluentd provides unit test frameworks for plugins:"
+msgstr ""
 
 # 23a785e7c1684bf889e1e44f2e540133
 #: ../../devel.rst:300
 msgid "Test driver for input plugins."
-msgstr "Test driver for input plugins."
+msgstr ""
 
 # de1c9fbf791f41cfa611cdcee58bbcdd
 #: ../../devel.rst:303
 msgid "Test driver for buffered output plugins."
-msgstr "Test driver for buffered output plugins."
+msgstr ""
 
 # 879ae0cd158944b78e20c88f0204421b
 #: ../../devel.rst:306
 msgid "Test driver for non-buffered output plugins."
-msgstr "Test driver for non-buffered output plugins."
+msgstr ""
 
 # 93d8cd55b21747ec98027e6310cb1ae4
 #: ../../devel.rst:308
 msgid "See fluentd's source code for details."
-msgstr "See fluentd's source code for details."
+msgstr ""

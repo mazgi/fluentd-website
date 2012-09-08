@@ -1,4 +1,4 @@
-# English translations for fluentd package.
+# Japanese translations for fluentd package.
 # Copyright (C) 2011, Sadayuki Furuhashi
 # This file is distributed under the same license as the fluentd package.
 #  <mazgi@gensole>, 2012.
@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-08 21:04+0900\n"
+"PO-Revision-Date: 2012-09-08 21:05+0900\n"
 "Last-Translator:  <mazgi@gensole>\n"
-"Language-Team: English\n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 # 110725b59f70468c94d68fcab2127de0
 #: ../../config.rst:4
 msgid "Configuration File"
-msgstr "Configuration File"
+msgstr ""
 
 # 41e4ff7e9bf541e7ba282b17935a08ee
 #: ../../config.rst:6
@@ -30,10 +30,6 @@ msgid ""
 "specifying the plugin parameters. The file is required for Fluentd to "
 "operate properly."
 msgstr ""
-"The configuration file allows the user to control the input and output "
-"behavior of Fluentd by (1) selecting input and output plugins and (2) "
-"specifying the plugin parameters. The file is required for Fluentd to "
-"operate properly."
 
 # 1a2e38e94e5d4c89a3230cde7f3260c9
 #: ../../config.rst:8
@@ -42,34 +38,31 @@ msgid ""
 "If the file does not exist, the user must create it using the following "
 "commands::"
 msgstr ""
-"The configuration file is located at $install_prefix/etc/fluent/fluent.conf. "
-"If the file does not exist, the user must create it using the following "
-"commands::"
 
 # da096cd9d13f48afb72b1da64328084f
 #: ../../config.rst:13
 msgid "The configuration file must include the following:"
-msgstr "The configuration file must include the following:"
+msgstr ""
 
 # 9715e995e2694f85a9a2280e9ae7e4f8
 #: ../../config.rst:15
 msgid "**<source>** directives which determine the input sources."
-msgstr "**<source>** directives which determine the input sources."
+msgstr ""
 
 # e4e2b8e675f74098a391d9acaee9f7aa
 #: ../../config.rst:16
 msgid "**<match>** directives which determine the output destinations."
-msgstr "**<match>** directives which determine the output destinations."
+msgstr ""
 
 # f81678d143354a69a0ffb24e86f9661d
 #: ../../config.rst:18
 msgid "This document describes the format of the file."
-msgstr "This document describes the format of the file."
+msgstr ""
 
 # 365bb0e4801c49818dbd5e5b22a616de
 #: ../../config.rst:25
 msgid "<source> Directive"
-msgstr "<source> Directive"
+msgstr ""
 
 # 03bb488abea64c04a04d5214b42f6472
 #: ../../config.rst:27
@@ -78,9 +71,6 @@ msgid ""
 "input plugins using **<source>** directives. Fluentd's standard input "
 "plugins include ``http`` and ``forward``."
 msgstr ""
-"Fluentd's input sources are enabled by selecting and configuring the desired "
-"input plugins using **<source>** directives. Fluentd's standard input "
-"plugins include ``http`` and ``forward``."
 
 # cacfecb4db6f4450b274a4f13645b8f2
 #: ../../config.rst:29
@@ -88,14 +78,12 @@ msgid ""
 "Each **<source>** directive must include a ``type`` parameter. The ``type`` "
 "parameter specifies the chosen input plugin."
 msgstr ""
-"Each **<source>** directive must include a ``type`` parameter. The ``type`` "
-"parameter specifies the chosen input plugin."
 
 # 84de9046454f4419a0a3c3bf9416967e
 # 5b9cc5890ea94872b4525e995a5d9dea
 #: ../../config.rst:31 ../../config.rst:64
 msgid "Examples::"
-msgstr "Examples::"
+msgstr ""
 
 # fcdf566af372459b8b66eb5b70348470
 #: ../../config.rst:46
@@ -104,9 +92,6 @@ msgid ""
 "by writing their own plugins. For further information regarding Fluentd's "
 "input sources, please refer to :ref:`input_plugin`."
 msgstr ""
-"The user can expand Fluentd's input sources beyond those provided initially "
-"by writing their own plugins. For further information regarding Fluentd's "
-"input sources, please refer to :ref:`input_plugin`."
 
 # 229c4955127741099b2dd819a7a1d961
 #: ../../config.rst:48
@@ -118,17 +103,11 @@ msgid ""
 "JSON object. In the above example, the forward plugin submits the following "
 "event::"
 msgstr ""
-"Sources submit events into the Fluentd's routing engine. An event consists "
-"of three entities: **tag**, **time** and **record**. Tag is a string "
-"separated by '.' (e.g. myapp.access), and is used to Fluentd's internal "
-"routing engine. Time is the UNIX time when the event occurs. Record is a "
-"JSON object. In the above example, the forward plugin submits the following "
-"event::"
 
 # 37d1207369534f52a363678e3a551cbb
 #: ../../config.rst:56
 msgid "<match> Directive"
-msgstr "<match> Directive"
+msgstr ""
 
 # ea63dee4bb7844299d66c1386e47fc3f
 #: ../../config.rst:58
@@ -137,9 +116,6 @@ msgid ""
 "desired output plugins using **<match>** directives. Fluentd's standard "
 "output plugins include ``file`` and ``forward``."
 msgstr ""
-"Fluentd's output destinations are enabled by selecting and configuring the "
-"desired output plugins using **<match>** directives. Fluentd's standard "
-"output plugins include ``file`` and ``forward``."
 
 # f9535851d4e24d8ea0010d0b5a49058c
 #: ../../config.rst:60
@@ -149,10 +125,6 @@ msgid ""
 "whose **tag** matches the pattern will be sent to the output destination. "
 "The ``type`` parameter specifies the chosen output plugin."
 msgstr ""
-"Each **<match>** directive must include a match pattern and a ``type`` "
-"parameter. Match patterns are used to filter the events. Only the events "
-"whose **tag** matches the pattern will be sent to the output destination. "
-"The ``type`` parameter specifies the chosen output plugin."
 
 # 7991b9d306c648eb8b39c34fbe8b423c
 #: ../../config.rst:62
@@ -160,8 +132,6 @@ msgid ""
 "For example, the user can send all matches to the pattern ``myapp.accesslog."
 "**`` to ``file`` in a specified directory."
 msgstr ""
-"For example, the user can send all matches to the pattern ``myapp.accesslog."
-"**`` to ``file`` in a specified directory."
 
 # e1693b9aceaa4d55a319ca277287509c
 #: ../../config.rst:79
@@ -170,24 +140,21 @@ msgid ""
 "by writing their own plugins. For further information regarding Fluentd's "
 "output destinations, please refer to :ref:`output_plugin`"
 msgstr ""
-"The user can expand Fluentd's input sources beyond those provided initially "
-"by writing their own plugins. For further information regarding Fluentd's "
-"output destinations, please refer to :ref:`output_plugin`"
 
 # 0c57bf91606d4b2698d5be4dbdd6ea95
 #: ../../config.rst:82
 msgid "Match Pattern"
-msgstr "Match Pattern"
+msgstr ""
 
 # 66038a5cb08d4f859c0966b2af4eff36
 #: ../../config.rst:84
 msgid "The following match patterns are available to the user:"
-msgstr "The following match patterns are available to the user:"
+msgstr ""
 
 # 411609f44eaa4121b8d6ab9360c2a360
 #: ../../config.rst:86
 msgid "``*`` matches a single tag element."
-msgstr "``*`` matches a single tag element."
+msgstr ""
 
 # d578a22cb9b24d248fe1c1f5dd4ea828
 #: ../../config.rst:88
@@ -195,23 +162,21 @@ msgid ""
 "For example, pattern ``a.*`` matches ``a.b``, but does not match ``a`` or "
 "``a.b.c``"
 msgstr ""
-"For example, pattern ``a.*`` matches ``a.b``, but does not match ``a`` or "
-"``a.b.c``"
 
 # 3145109fe8104c24b1b85d41d63d06cb
 #: ../../config.rst:90
 msgid "``**`` matches zero or more tag elements."
-msgstr "``**`` matches zero or more tag elements."
+msgstr ""
 
 # d8d4c1228d0e481b96e2dbb877df1e81
 #: ../../config.rst:92
 msgid "For example, pattern ``a.**`` matches ``a``, ``a.b`` and ``a.b.c``"
-msgstr "For example, pattern ``a.**`` matches ``a``, ``a.b`` and ``a.b.c``"
+msgstr ""
 
 # caf623472594424db4de7bc126e9ee16
 #: ../../config.rst:94
 msgid "``{X,Y,Z}`` matches X, Y, or Z, where X, Y, and Z are match patterns."
-msgstr "``{X,Y,Z}`` matches X, Y, or Z, where X, Y, and Z are match patterns."
+msgstr ""
 
 # f04ce5af985d4fad9fcfde2e78f50e0d
 #: ../../config.rst:96
@@ -219,8 +184,6 @@ msgid ""
 "For example, pattern ``{a,b}`` matches ``a`` and ``b``, but does not match "
 "``c``"
 msgstr ""
-"For example, pattern ``{a,b}`` matches ``a`` and ``b``, but does not match "
-"``c``"
 
 # f85564b8e3234b79ac7295344efcbb8f
 #: ../../config.rst:98
@@ -228,13 +191,11 @@ msgid ""
 "This can be used in combination with the ``*`` or ``**`` patterns. Examples "
 "include ``a.{b,c}.*`` and ``a.{b,c.**}``"
 msgstr ""
-"This can be used in combination with the ``*`` or ``**`` patterns. Examples "
-"include ``a.{b,c}.*`` and ``a.{b,c.**}``"
 
 # ddc5ef67cf1e43d382b7edda21b77792
 #: ../../config.rst:102
 msgid "Include"
-msgstr "Include"
+msgstr ""
 
 # 4fd69df531a8412ab4b184b2614299f8
 #: ../../config.rst:104
@@ -242,8 +203,6 @@ msgid ""
 "Directives in separate configuration files can be imported using the "
 "**include** directive::"
 msgstr ""
-"Directives in separate configuration files can be imported using the "
-"**include** directive::"
 
 # 40571c7d743a4c4cbd33084492a76134
 #: ../../config.rst:109
@@ -251,10 +210,8 @@ msgid ""
 "The **include** directive supports regular file path, glob pattern, and http "
 "URL conventions::"
 msgstr ""
-"The **include** directive supports regular file path, glob pattern, and http "
-"URL conventions::"
 
 # 58bcd312ed9e48d08293d191ad0ee37f
 #: ../../config.rst:158
 msgid "Next step: :ref:`plugin`"
-msgstr "Next step: :ref:`plugin`"
+msgstr ""
