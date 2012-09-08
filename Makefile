@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = _build
+LANGUAGES     = en ja
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -49,6 +50,10 @@ gettext: dirs
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/locale
 	@echo
 	@echo "Build finished. The message catalogs are in $(BUILDDIR)/locale."
+	@for l in $(LANGUAGES); \
+	do \
+	sphinx-gettext-helper -l $$l -p _build/locale --update --build; \
+	done;
 
 dirhtml: dirs
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
