@@ -1,0 +1,339 @@
+# English translations for fluentd package.
+# Copyright (C) 2011, Sadayuki Furuhashi
+# This file is distributed under the same license as the fluentd package.
+#  <mazgi@gensole>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fluentd 0.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-08 20:49\n"
+"PO-Revision-Date: 2012-09-08 20:49+0900\n"
+"Last-Translator:  <mazgi@gensole>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 273c36daae714c46a6d85c632b41bbc8
+# d0fe41732a5247d2b582f6386ca9fbea
+#: ../../install.rst:4 ../../install.rst:11
+msgid "Installation"
+msgstr "Installation"
+
+# d6047b1aca2141df8b42eca5ba8ced13
+#: ../../install.rst:13
+msgid "The user can install Fluentd from four sources."
+msgstr "The user can install Fluentd from four sources."
+
+# 53f4d1aacb0f4da883bf3e23b559a2a9
+#: ../../install.rst:15
+msgid "Binary package"
+msgstr "Binary package"
+
+# b10a4dbf4aff4db3bc0c667c4b796a4e
+#: ../../install.rst:16
+msgid "RubyGems"
+msgstr "RubyGems"
+
+# 26e9ce37d6524f4e987b160d202bbd91
+#: ../../install.rst:17
+msgid ".tar.gz"
+msgstr ".tar.gz"
+
+# c7c8488fab1c4e2e965981043e313aa2
+#: ../../install.rst:18
+msgid "Git repository"
+msgstr "Git repository"
+
+# 6f763661db934507ba80939c923d9620
+#: ../../install.rst:20
+msgid "In most cases, installing from the binary package is recommended."
+msgstr "In most cases, installing from the binary package is recommended."
+
+# 9f8479922c8f480c992796b518c51b05
+#: ../../install.rst:23
+msgid "Install from Binary Package"
+msgstr "Install from Binary Package"
+
+# be7767921f51498384d84a78ec6332ff
+#: ../../install.rst:25
+msgid ""
+"`Treasure Data, Inc. <http://treasure-data.com/>`_ provides the stable "
+"distribution of Fluentd, called td-agent. If you don't want to install Ruby "
+"interpreter (> 1.9.2) by yourself and don't want to manage Fluentd + plugins "
+"versions, using td-agent is the recommended way."
+msgstr ""
+"`Treasure Data, Inc. <http://treasure-data.com/>`_ provides the stable "
+"distribution of Fluentd, called td-agent. If you don't want to install Ruby "
+"interpreter (> 1.9.2) by yourself and don't want to manage Fluentd + plugins "
+"versions, using td-agent is the recommended way."
+
+# 17f1cbbb1d6a411c85a8ffc632ce8607
+#: ../../install.rst:27
+msgid "td-agent consists of the following components:"
+msgstr "td-agent consists of the following components:"
+
+# 79111038fc5847adb976fcd02a28130f
+#: ../../install.rst:29
+msgid ""
+"Ruby 1.9.3 interpreter, dedicated to Fluentd (no need to install Ruby on "
+"your node)"
+msgstr ""
+"Ruby 1.9.3 interpreter, dedicated to Fluentd (no need to install Ruby on "
+"your node)"
+
+# 2d17d1281789426e85f855f53b94cf4a
+#: ../../install.rst:30
+msgid "Fluentd"
+msgstr "Fluentd"
+
+# 7d125ba817f4476197c5b6c33eeb19a0
+#: ../../install.rst:31
+msgid "jemalloc (supress memory fragmentation)"
+msgstr "jemalloc (supress memory fragmentation)"
+
+# debb669aea8a497ebd011b1478142af0
+#: ../../install.rst:32
+msgid "Several plugins with stable & compatible versions"
+msgstr "Several plugins with stable & compatible versions"
+
+# dd5b5bfabff64db4bb1df1a891290fae
+#: ../../install.rst:34
+msgid ""
+"td-agent is actively maintained and is used within production environments. "
+"For details on installing td-agent, please refer to the following documents:"
+msgstr ""
+"td-agent is actively maintained and is used within production environments. "
+"For details on installing td-agent, please refer to the following documents:"
+
+# 20d22d9c57a140448ca8e5bf1e7b50f5
+#: ../../install.rst:36
+msgid ""
+"`Installing td-agent for Debian and Ubuntu <http://help.treasure-data.com/kb/"
+"installing-td-agent-daemon/installing-td-agent-for-debian-and-ubuntu>`_"
+msgstr ""
+"`Installing td-agent for Debian and Ubuntu <http://help.treasure-data.com/kb/"
+"installing-td-agent-daemon/installing-td-agent-for-debian-and-ubuntu>`_"
+
+# 443bfecd17244555aeefc9d279dfb877
+#: ../../install.rst:37
+msgid ""
+"`Installing td-agent for Redhat and CentOS <http://help.treasure-data.com/kb/"
+"installing-td-agent-daemon/installing-td-agent-for-redhat-and-centos>`_"
+msgstr ""
+"`Installing td-agent for Redhat and CentOS <http://help.treasure-data.com/kb/"
+"installing-td-agent-daemon/installing-td-agent-for-redhat-and-centos>`_"
+
+# dd835bcd35d8477f9218f8b181c2f357
+#: ../../install.rst:38
+msgid ""
+"`ChangeLog of td-agent <http://help.treasure-data.com/kb/installing-td-agent-"
+"daemon/changelog-of-td-agent>`_"
+msgstr ""
+"`ChangeLog of td-agent <http://help.treasure-data.com/kb/installing-td-agent-"
+"daemon/changelog-of-td-agent>`_"
+
+# b3bc35adf2194c05968582caf61b5161
+#: ../../install.rst:40
+msgid ""
+"Please note that if Fluentd is installed via td-agent, the server command "
+"will be 'td-agent' instead of 'fluentd'. The config file is located at '/etc/"
+"td-agent/td-agent.conf'."
+msgstr ""
+"Please note that if Fluentd is installed via td-agent, the server command "
+"will be 'td-agent' instead of 'fluentd'. The config file is located at '/etc/"
+"td-agent/td-agent.conf'."
+
+# 97fc31d70f8d469fb04631571b44e4c2
+#: ../../install.rst:43
+msgid "Install from RubyGems"
+msgstr "Install from RubyGems"
+
+# 3bc39bd2621941fe928e75f17d69ccbe
+#: ../../install.rst:45
+msgid ""
+"In order to install Fluentd via RubyGems, first install `Ruby <http://www."
+"ruby-lang.org/>`_ >= 1.9.2. We recommend using `rvm (Ruby Version Manager) "
+"<https://rvm.beginrescueend.com/>`_ to install Ruby. The installed Ruby "
+"version can be confirmed as follows::"
+msgstr ""
+"In order to install Fluentd via RubyGems, first install `Ruby <http://www."
+"ruby-lang.org/>`_ >= 1.9.2. We recommend using `rvm (Ruby Version Manager) "
+"<https://rvm.beginrescueend.com/>`_ to install Ruby. The installed Ruby "
+"version can be confirmed as follows::"
+
+# 0f40c687b30744e0b328fe3a90dde494
+#: ../../install.rst:50
+msgid ""
+"Once `Ruby <http://www.ruby-lang.org/>`_ >= 1.9.2 is installed, use the "
+"``gem`` command as follows::"
+msgstr ""
+"Once `Ruby <http://www.ruby-lang.org/>`_ >= 1.9.2 is installed, use the "
+"``gem`` command as follows::"
+
+# 53fd1834d28a497c801f6648f210c8a5
+# 72ea309393be457e9a1e818e6e1cce87
+# f22e3a419acc4369aa8ee3d82f6a6981
+#: ../../install.rst:58 ../../install.rst:85 ../../install.rst:97
+msgid "Next step: :ref:`install/confirm`"
+msgstr "Next step: :ref:`install/confirm`"
+
+# 328446901d184213b08ac25aa0d53e1a
+#: ../../install.rst:61
+msgid "Install from .tar.gz"
+msgstr "Install from .tar.gz"
+
+# 63dd88def2b042f5b1933ec0a71b3708
+#: ../../install.rst:63
+msgid ""
+"Before building the source package, please ensure that the following "
+"libraries are already installed:"
+msgstr ""
+"Before building the source package, please ensure that the following "
+"libraries are already installed:"
+
+# 41c3c34e7e50431698ecf0db139d93f1
+#: ../../install.rst:66
+msgid "Ubuntu/Debian install"
+msgstr "Ubuntu/Debian install"
+
+# 356b0c3a602f407791067c886027624b
+#: ../../install.rst:66
+msgid "RedHat/CentOS install"
+msgstr "RedHat/CentOS install"
+
+# d536acc270b94addae54ac4276165387
+#: ../../install.rst:68
+msgid "openssl"
+msgstr "openssl"
+
+# 5f810179fef74f2ca05f249807e9f433
+#: ../../install.rst:68
+msgid "``apt-get install libssl-dev``"
+msgstr "``apt-get install libssl-dev``"
+
+# 6b4dedbe06704c00bcda6cc4610580d0
+#: ../../install.rst:68
+msgid "``yum install libssl-dev``"
+msgstr "``yum install libssl-dev``"
+
+# af8d69cc8fc24a19b06d1a8d88d426f3
+#: ../../install.rst:70
+msgid "zlib"
+msgstr "zlib"
+
+# fea0cceec1b6428c926f19271af479ae
+#: ../../install.rst:70
+msgid "``apt-get install zlib1g-dev``"
+msgstr "``apt-get install zlib1g-dev``"
+
+# 0e74d9987f644f4b9dc0affc2010373a
+#: ../../install.rst:70
+msgid "``yum install zlib-devel``"
+msgstr "``yum install zlib-devel``"
+
+# 97ace2c7403445ddab4814c465ccabfb
+#: ../../install.rst:72
+msgid "readline"
+msgstr "readline"
+
+# b89b2ba39e8c4cd9b2790fd638ce7c50
+#: ../../install.rst:72
+msgid "``apt-get install libreadline6-dev``"
+msgstr "``apt-get install libreadline6-dev``"
+
+# 89d8d6373c8c48e3be15473e4ef9a990
+#: ../../install.rst:72
+msgid "``yum install readline-devel``"
+msgstr "``yum install readline-devel``"
+
+# d27c5c15a2f147178355a45071b7bd9c
+#: ../../install.rst:75
+msgid ""
+"Next, download the source package from the `Download <https://github.com/"
+"fluent/fluentd/downloads>`_ page and extract it."
+msgstr ""
+"Next, download the source package from the `Download <https://github.com/"
+"fluent/fluentd/downloads>`_ page and extract it."
+
+# 8c2dcf798a464aaf9ba9706e89703321
+#: ../../install.rst:77
+msgid "Finally, build and install using the following commands::"
+msgstr "Finally, build and install using the following commands::"
+
+# 77ead181c370453ca137b246960d5559
+#: ../../install.rst:83
+msgid ""
+"The commands above will install Fluentd to ``$prefix`` and Ruby to ``$prefix/"
+"lib/fluent/ruby``."
+msgstr ""
+"The commands above will install Fluentd to ``$prefix`` and Ruby to ``$prefix/"
+"lib/fluent/ruby``."
+
+# 79da384f3a054f538d0431796ba38ded
+#: ../../install.rst:88
+msgid "Install from Latest Git Repository"
+msgstr "Install from Latest Git Repository"
+
+# 3848080068e64417899c4f83eee23130
+#: ../../install.rst:90
+msgid ""
+"To install the latest development version of Fluentd from the `source "
+"repository <https://github.com/fluent/fluentd>`_, prepare `Ruby <http://www."
+"ruby-lang.org/>`_ >= 1.9.2 and run the following commands::"
+msgstr ""
+"To install the latest development version of Fluentd from the `source "
+"repository <https://github.com/fluent/fluentd>`_, prepare `Ruby <http://www."
+"ruby-lang.org/>`_ >= 1.9.2 and run the following commands::"
+
+# f6bafb6989a84e1a8d1fe211dbeda5ca
+#: ../../install.rst:102
+msgid "Confirm Installation"
+msgstr "Confirm Installation"
+
+# 94ad7672f05949849f52d722bdfec4c7
+#: ../../install.rst:104
+msgid ""
+"To confirm that Fluentd was installed successfully, run the following "
+"commands::"
+msgstr ""
+"To confirm that Fluentd was installed successfully, run the following "
+"commands::"
+
+# c3a974a1f3d84f0e8ac7fdc20395b4dc
+#: ../../install.rst:110
+msgid ""
+"The last command sends Fluentd a message '{\"json\":\"message\"}' with a "
+"\"debug.test\" tag. If the installation was successful, Fluentd will output "
+"the following message::"
+msgstr ""
+"The last command sends Fluentd a message '{\"json\":\"message\"}' with a "
+"\"debug.test\" tag. If the installation was successful, Fluentd will output "
+"the following message::"
+
+# 0feb38674f6b4c37bb5e216e511d3ccf
+#: ../../install.rst:116
+msgid "Update"
+msgstr "Update"
+
+# b267ce5e4c124d6a892d32355f88ab06
+#: ../../install.rst:118
+msgid ""
+"Once Fluentd is installed, the following command will update it to the "
+"latest version::"
+msgstr ""
+"Once Fluentd is installed, the following command will update it to the "
+"latest version::"
+
+# b20d434aa16e41569dcc96c7e25b617d
+#: ../../install.rst:122
+msgid "Next step: :ref:`config`"
+msgstr "Next step: :ref:`config`"
+
+# b8487901c4e54ba3b49d320089d76edc
+#: ../../install.rst:124
+msgid "Next step: :ref:`devel`"
+msgstr "Next step: :ref:`devel`"
