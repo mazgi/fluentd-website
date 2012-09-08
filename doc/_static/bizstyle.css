@@ -2,7 +2,7 @@
  * bizstyle.css_t
  * ~~~~~~~~~~~~~~
  *
- * Sphinx stylesheet -- business style theme. 
+ * Sphinx stylesheet -- business style theme.
  *
  * :copyright: Copyright 2011 by Sphinx-users.jp, see AUTHORS.
  * :license: MIT, see LICENSE for details.
@@ -28,7 +28,6 @@ body {
     border-left: 1px solid #336699;
 
     margin: 0px 40px 0px 40px;
-    min-width: 740px;
 }
 
 div.document {
@@ -69,7 +68,7 @@ div.related ul {
 }
 
 div.related ul li {
-    text: white;
+    color: white;
     margin: 0;
     padding: 0;
     height: 2em;
@@ -141,6 +140,7 @@ div.footer {
     clear: both;
     font-size: 0.8em;
     text-align: right;
+    border-bottom: 1px solid #336699;
 
     -moz-box-shadow: 2px 2px 5px #000;
     -webkit-box-shadow: 2px 2px 5px #000;
@@ -153,7 +153,7 @@ div.footer a {
 
 /* -- body styles ----------------------------------------------------------- */
 
-p {    
+p {
     margin: 0.8em 0 0.5em 0;
 }
 
@@ -318,6 +318,10 @@ div.admonition p {
     padding: 0;
 }
 
+div.admonition li p {
+    margin-left: 0;
+}
+
 div.admonition pre, div.warning pre {
     margin: 0.4em 1em 0.4em 1em;
 }
@@ -420,6 +424,7 @@ table.docutils td p {
 
 table.field-list td, table.field-list th {
     border: 0 !important;
+    word-break: break-word;
 }
 
 table.footnote td, table.footnote th {
@@ -431,6 +436,48 @@ th {
     text-align: left;
     padding-right: 5px;
     background-color: #82A0BE;
+}
+
+/* WIDE DESKTOP STYLE */
+@media only screen and (min-width: 1176px) {
+body {
+    margin: 0 40px 0 40px;
+}
+}
+
+/* TABLET STYLE */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body {
+    margin: 0 40px 0 40px;
+}
+}
+
+/* MOBILE LAYOUT (PORTRAIT/320px) */
+@media only screen and (max-width: 767px) {
+body {
+    margin: 0;
+}
+div.bodywrapper {
+    margin: 0;
+    width: 100%;
+    border: none;
+}
+div.sphinxsidebar {
+    display: none;
+}
+}
+
+/* MOBILE LAYOUT (LANDSCAPE/480px) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+body {
+    margin: 0 20px 0 20px;
+}
+}
+
+/* RETINA OVERRIDES */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
 }
 
 /* -- end ------------------------------------------------------------------- */
