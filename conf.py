@@ -199,5 +199,5 @@ latex_documents = [
 #latex_use_modindex = True
 
 # gettext
-locale_dirs = ["locale"]
+locale_dirs = ["locale/"]
 language = "en"
