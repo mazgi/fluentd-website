@@ -8,29 +8,30 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-08 21:04+0900\n"
-"Last-Translator:  <mazgi@gensole>\n"
+"PO-Revision-Date: 2012-09-19 01:07+0900\n"
+"Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
 
 # ed9fcc1b74fc4ad0ade45283e2673860
 #: ../../index.rst:7
 msgid "Welcome to Fluentd's documentation!"
-msgstr ""
+msgstr "Fluentdのドキュメントへようこそ"
 
 # 8836c97874e84dac85cf70b3f9aa7fac
 #: ../../index.rst:21
 msgid "Plugins"
-msgstr ""
+msgstr "プラグイン"
 
 # f4557b0e89174eca88d48d032cb47b5d
 #: ../../index.rst:23
 msgid "`Fluentd plugins <http://fluentd.org/plugin/>`_"
-msgstr ""
+msgstr "`Fluentdプラグイン <http://fluentd.org/plugin/>`_"
 
 # ae39526e82074206806ea77ae3a01a1c
 #: ../../index.rst:26
@@ -40,12 +41,12 @@ msgstr ""
 # a58235bc18f547089f64ec0feab3c73a
 #: ../../index.rst:28
 msgid "`Fluentd Google Group <http://groups.google.com/group/fluentd>`_"
-msgstr ""
+msgstr "`Fluentd Googleグループ <http://groups.google.com/group/fluentd>`_"
 
 # 9c8ed3f040d742d4a3b49a819ec17694
 #: ../../index.rst:31
 msgid "Powered By"
-msgstr ""
+msgstr "Powered By"
 
 # a7c4d17f72da4335b0de9fb988730314
 #: ../../index.rst:33
@@ -57,7 +58,7 @@ msgstr ""
 # fdf7e3e726d84140826a7dd11d78549d
 #: ../../index.rst:36
 msgid "Screencasts"
-msgstr ""
+msgstr "Screencasts"
 
 # 35c46e69f97c4cd4a8d8f3f7c5400cf9
 #: ../../index.rst:38
@@ -69,12 +70,12 @@ msgstr ""
 # 36d47fa37436456d820ec878dc17f00a
 #: ../../index.rst:41
 msgid "RDoc"
-msgstr ""
+msgstr "RDoc"
 
 # 242ea439b5ee456c948733a6e04f5ad8
 #: ../../index.rst:43
 msgid "`Fluentd RDoc <http://fluentd.org/rdoc/>`_"
-msgstr ""
+msgstr "`Fluentd RDoc <http://fluentd.org/rdoc/>`_"
 
 # 35e987ed814d451a9fdbe35a20b1afea
 #: ../../index.rst:46
@@ -84,9 +85,9 @@ msgstr ""
 # c13c1e8297e74b4b9e0e9db1f62bb4d4
 #: ../../index.rst:48
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 # 764bb89c5b754032ba69af1376e9a748
 #: ../../index.rst:49
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"
