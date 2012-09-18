@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-08 21:04+0900\n"
-"Last-Translator:  <mazgi@gensole>\n"
+"PO-Revision-Date: 2012-09-19 01:03+0900\n"
+"Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
 
 # 8dbed0e928fa4f9bb979e09034e6934b
 #: ../../plugin.rst:4
 msgid "Plugins"
-msgstr ""
+msgstr "プラグイン"
 
 # 6f2d812c35d24933ae08a80a8e045ee0
 #: ../../plugin.rst:6
 msgid "Plugins extend Fluentd's functionality."
-msgstr ""
+msgstr "プラグインはFluentdの機能を拡張します。"
 
 # 8f389a1ed4c8467694ce88f74c2a8a9f
 #: ../../plugin.rst:8
@@ -34,6 +35,9 @@ msgid ""
 "their own plugins. For further information on writing additional plugins, "
 "please refer to :ref:`devel`."
 msgstr ""
+"ユーザーはFluentdに添付された標準プラグインを使ったり、独自のプラグインを作成"
+"することができます。追加プラグインを作成する方法の詳細については :ref:"
+"`devel` を参照してください。"
 
 # 6dc6b7ae25c94dc0bada37a34f970402
 #: ../../plugin.rst:10
@@ -42,23 +46,26 @@ msgid ""
 "plugin and at least one output plugin using the configuration file. For "
 "further information on the configuration file, please refer to :ref:`config`."
 msgstr ""
+"Fluentdが適切に機能するためには、ユーザーは設定ファイルを使用して、少なくとも"
+"1つのインプットプラグインと1つのアウトプットプラグインを有効にしなければなり"
+"ません。設定ファイルの詳細については :ref:`config` を参照してください。"
 
 # 76bed6d8a97446f9be6642079995c4fe
 #: ../../plugin.rst:17
 msgid "Types of plugins"
-msgstr ""
+msgstr "プラグインの種類"
 
 # 47d57817d13141a09913b49b272bfc0f
 #: ../../plugin.rst:19
 msgid "Fluentd has 3 types of plugins:"
-msgstr ""
+msgstr "Fluentdには3種類のプラグインがあります:"
 
 # e1214d4b8da541d4a012dd3ecb02654d
 #: ../../plugin.rst:22
 msgid "Defines an input source of events."
-msgstr ""
+msgstr "イベントの入力元を定義します。"
 
-# 6df0ac5a1bac41079fe6a3c03e62e8a9
+# TODO: 訳す
 #: ../../plugin.rst:24
 msgid ""
 "An input plugin typically creates a thread and a listen socket. It can also "
@@ -66,11 +73,15 @@ msgid ""
 "Fluentd does not restrict the user from creating input plugins with "
 "alternative implementations."
 msgstr ""
+"インプットプラグインは通常スレッドと待機ソケットを作成します。それは定期的に"
+"データソースからデータを取得するように実装することができます。Please note "
+"that Fluentd does not restrict the user from creating input plugins with "
+"alternative implementations."
 
 # bd3d36ecfc684bd6b41b42305cf39e01
 #: ../../plugin.rst:27
 msgid "Defines an output destination for events."
-msgstr ""
+msgstr "イベントの出力先を定義します。"
 
 # 1b43fcc752144c62bec341603e9873c7
 #: ../../plugin.rst:29
@@ -80,16 +91,23 @@ msgid ""
 "out to a file or network. The buffer's behavior is defined by a separate "
 "buffer plugin. Different buffer plugins can be chosen for each output plugin."
 msgstr ""
+"出力プラグインは通常バッファリング(*buffered*)されます。バッファアウトプット"
+"プラグインは、ファイルやネットワークにデータのチャンクを書き出す前に、バッ"
+"ファにイベントログを蓄積するようFluentdに指示します。バッファの振る舞いは分離"
+"されたバッファプラグインによって定義されます。他のバッファプラグインを各アウ"
+"トプットプラグイン毎に選べます。"
 
 # 4d244b4446174795bf7915f3142d8dfd
 #: ../../plugin.rst:31
 msgid "Some output plugins are fully customized and do not use buffers."
 msgstr ""
+"中には完全にカスタマイズされた出力プラグインがあり、その場合はバッファを使用"
+"しません。 "
 
 # 02b0e0be6ea04c148c7afc1d664119aa
 #: ../../plugin.rst:34
 msgid "Defines the implementation of a buffer."
-msgstr ""
+msgstr "バッファの実装を定義します。"
 
 # 305ddc6dac6d4c3bac7831f5aad30cf2
 #: ../../plugin.rst:36
@@ -97,16 +115,17 @@ msgid ""
 "The user should choose the appropriate buffer plugin for the desired "
 "combination of performance and reliability."
 msgstr ""
+"ユーザーは性能と信頼性の組み合わせをもとにバッファプラグインを選ぶべきです。"
 
 # 9ed886d2809c4c23b403391197d1bf97
 #: ../../plugin.rst:43
 msgid "Input plugins"
-msgstr ""
+msgstr "入力プラグイン"
 
 # 248c322fe98f430c82ac283d9466598e
 #: ../../plugin.rst:46
 msgid "http"
-msgstr ""
+msgstr "http"
 
 # 77f04681ce234b5aac0d078824d8c1a4
 #: ../../plugin.rst:48
@@ -115,26 +134,29 @@ msgid ""
 "becomes the *tag* of the Fluentd event log, and the POSTed body element "
 "becomes the *record* of the Fluentd event log."
 msgstr ""
+"**http** インプットプラグインはFluentdがHTTPクライアントを待ち受けることがで"
+"きるようにします。URLはFluentdイベントログのタグ(*tag*)になり、POSTされたbody"
+"要素はFluentdイベントログのレコード(*record*)になります。"
 
 # bf72d312964545d9b091e00e67c1126c
 #: ../../plugin.rst:51
 msgid "Parameter"
-msgstr ""
+msgstr "パラメータ"
 
 # 4944102d867647c1b7ae259a7b4e50da
 #: ../../plugin.rst:51
 msgid "Description"
-msgstr ""
+msgstr "詳細"
 
 # 89c2619975c44d9d8b7e12541a3ac937
 #: ../../plugin.rst:51
 msgid "Required?"
-msgstr ""
+msgstr "必須かどうか?"
 
 # 70edf026b68741a6ba4ec57c713b72ce
 #: ../../plugin.rst:53
 msgid "json"
-msgstr ""
+msgstr "json"
 
 # ef37e5ab90fc47449a2ff9f02a834fc2
 #: ../../plugin.rst:53
@@ -150,7 +172,7 @@ msgstr ""
 # 92f1b57168a44581a8542c0a59fdd90e
 #: ../../plugin.rst:55
 msgid "msgpack"
-msgstr ""
+msgstr "msgpack"
 
 # 919ad20b80c947a8b0b8541b4a618285
 #: ../../plugin.rst:55
@@ -160,22 +182,22 @@ msgstr ""
 # 3d351dc3d52744f493b474a0e2c7bda9
 #: ../../plugin.rst:57
 msgid "time"
-msgstr ""
+msgstr "time"
 
 # b5700e276c854ca396e26a5181dc297b
 #: ../../plugin.rst:57
 msgid "time of the event in integer (UNIX time)"
-msgstr ""
+msgstr "整数によるイベント日時(UNIX time)"
 
 # 6fea4444bde346b48479e5f300942142
 #: ../../plugin.rst:57
 msgid "no"
-msgstr ""
+msgstr "No"
 
 # 8b7ba4e4e1fa457fbb229dbe079cd366
 #: ../../plugin.rst:60
 msgid "**example**::"
-msgstr ""
+msgstr "**例**::"
 
 # 6d5ca60f00524ba3b4d2cdf6881626ed
 # 32aa493a94c8492abadbb282ee0d1903
@@ -197,57 +219,61 @@ msgstr ""
 #: ../../plugin.rst:566 ../../plugin.rst:593 ../../plugin.rst:607
 #: ../../plugin.rst:625 ../../plugin.rst:638
 msgid "**configuration**::"
-msgstr ""
+msgstr "**設定**::"
 
 # ee18ece8ccb04b839051eda7caf34977
 #: ../../plugin.rst:79
 msgid "The port to listen on. Default Value = 9880"
-msgstr ""
+msgstr "待ち受けポート。デフォルトは 9880"
 
 # 0c930c64c32b4c948a230426830741f7
 #: ../../plugin.rst:83
 msgid "The bind address to listen on. Default Value = 0.0.0.0 (all addresses)"
-msgstr ""
+msgstr "待ち受けるアドレス。デフォルトは 0.0.0.0 (すべてのアドレス)"
 
 # 6ffc77feced8448e8181368cf6592103
 #: ../../plugin.rst:87
 msgid "The limit of the body size. Default Value = 32MB."
-msgstr ""
+msgstr "bodyサイズの上限。デフォルトは32MB"
 
 # 7775fde6163b4b328ad469cff03dbdf2
 #: ../../plugin.rst:91
 msgid ""
 "The timeout limit for keeping the connection alive. Default Value = 10 "
 "seconds"
-msgstr ""
+msgstr "コネクションを生かしたまま維持するタイムアウト。デフォルトは10秒"
 
 # 20adf383cf5145fdb5913cced565fd7a
 #: ../../plugin.rst:96
 msgid "tail"
-msgstr ""
+msgstr "tail"
 
-# 3d00329fb2564c68a018840e066b3300
+# TODO: ..I think an example would help.必要?
 #: ../../plugin.rst:97
 msgid ""
 "..I think an example would help. The **tail** input plugin allows Fluentd to "
 "read events from the tail of text files. Its read behavior is analogous to "
 "the ``tail -F`` command."
 msgstr ""
+"*この例はとても役立つと思います。* **tail** インプットプラグインは、Fluentdが"
+"イベントログをテキストファイルの末尾から読み取れるようにします。その読み取り"
+"方は ``tail -F`` コマンドによく似ています。"
 
 # 8612bb1aedba4b00b300722e60e0e87b
 #: ../../plugin.rst:110
 msgid "Paths separated with ',' to read. This parameter is required."
-msgstr ""
+msgstr "pathは読み取るために','で区切られています。このパラメータは必須です。"
 
 # 24096207e1a04cb29719f423d2b079d6
 #: ../../plugin.rst:113
 msgid "Tag of the event. This parameter is required."
-msgstr ""
+msgstr "イベントのタグ。このパラメータは必須です。"
 
 # 2cb84d709ba548cba58252489ebfdabb
 #: ../../plugin.rst:116
 msgid "Format of the log. It's name of a template or regexp surround by '/'."
 msgstr ""
+"ログ形式。これはテンプレート名または'/'で囲まれた正規表現のいずれかです。"
 
 # 951216fa4b59457b9d50e94f8709f4a5
 #: ../../plugin.rst:118
@@ -257,11 +283,16 @@ msgid ""
 "format of the time using *time_format* parameter. If the regexp has capture "
 "named 'tag', *tag* parameter + captured tag is used as the tag of the event."
 msgstr ""
+"正規表現には少なくとも1つのnamed captures (?<NAME>PATTERN)が必要です。もし正"
+"規表現に'time'というキャプチャ名が含まれている場合、それはイベントのtimeとし"
+"て使われます。あなたは *time_format* パラメータを使うことで日時の書式を指定す"
+"ることができます。もし正規表現に'tag'というキャプチャ名が含まれている場合、"
+"*tag* パラメータ+キャプチャされたタグがイベントのタグとして使われます。"
 
 # bc7196ba07914fe0ab8865c31f16eec4
 #: ../../plugin.rst:120
 msgid "Following templates are supported:"
-msgstr ""
+msgstr "テンプレートについては下記を参照してください:"
 
 # 7d20440310bb4ebd89120c0e5bb303e2
 #: ../../plugin.rst:123
@@ -270,6 +301,9 @@ msgid ""
 "*size*, *referer* and *agent* fields. This template is same as following "
 "configuration::"
 msgstr ""
+"Apacheログファイルからは *host*, *user*, *time*, *method*, *path*, *code*, "
+"*size*, *referer*, *agent* フィールドを読み取ります。このテンプレートは次の設"
+"定と同じです::"
 
 # c2ac8771ca1546cea2797062fe1b1dc5
 #: ../../plugin.rst:129
@@ -277,6 +311,8 @@ msgid ""
 "Reads syslog's output file (e.g. /var/log/syslog) *time*, *host*, *ident*, "
 "*message* fields. This template is same as following configuration::"
 msgstr ""
+"Syslog出力ファイル(例: /var/log/syslog)からは *time*, *host*, *ident*, "
+"*message* フィールドを読み取ります。このテンプレートは次の設定と同じです::"
 
 # 8ca664aa4fc348f6abbdb98f81016d09
 #: ../../plugin.rst:135
@@ -286,6 +322,10 @@ msgid ""
 "`Time#strptime <http://www.ruby-doc.org/core-1.9/classes/Time."
 "html#M000326>`_."
 msgstr ""
+"timeフィールドの形式です。このパラメータの形式は‘time’のキャプチャが含まれ、"
+"なおかつ、それが自動的に解析できない場合にのみ必要となります。 "
+"`Time#strptime <http://www.ruby-doc.org/core-1.9/classes/Time."
+"html#M000326>`_ を参照してください。"
 
 # 7f55a994ee9749bab9383e57f527c221
 #: ../../plugin.rst:139
@@ -299,12 +339,20 @@ msgid ""
 "seconds. The rotate_wait parameter accepts a single integer which represents "
 "the number of seconds you want to set this time interval to."
 msgstr ""
+"in_tailは\"tail -F\"より少しだけ優れています。When one is rotating a file, "
+"there is a possibility that some data might still need to be written to the "
+"old file as opposed to the new one. in_tail takes care of this by keeping a "
+"reference to the old file (even after it's been rotated) for some time "
+"before transitioning to the new file entirely (so that the data designated "
+"for the old file don't get lost). デフォルトのインターバルは5秒です。"
+"rotate_waitパラメータは設定したいインターバル秒数を表す1つの整数を受け付けま"
+"す。"
 
 # db225351ca2f40868d5aa46760e1ebe9
 # 2c8fc20f772244a494a18b775d0fd263
 #: ../../plugin.rst:175 ../../plugin.rst:368
 msgid "forward"
-msgstr ""
+msgstr "forward"
 
 # 2e7d51ee14a2414e8acd7535b60da637
 #: ../../plugin.rst:177
@@ -314,27 +362,31 @@ msgid ""
 "receive event logs from other fluentd, ``fluent-cat`` command or client "
 "libraries."
 msgstr ""
+"**forward** インプットプラグインは、イベントストリームを受け取るためTCPソケッ"
+"トをlistenし、またハートビートメッセージを受け取るためUDPソケットをlistenしま"
+"す。これは他のfluentd, ``fluent-cat`` コマンド, クライアントライブラリからイ"
+"ベントログを受け取るために使われます。"
 
 # ede97ef7a42145849c8a258ec63128a1
 #: ../../plugin.rst:188
 msgid "port to listen on (both TCP and UDP). Default is 24224."
-msgstr ""
+msgstr "待ち受けポート(TCPとUDP両方)。デフォルトは24224"
 
 # ec17b79b71f7461293d7ff3ce356e936
 #: ../../plugin.rst:191
 msgid "bind address to listen on. Default is 0.0.0.0 (all addresses)."
-msgstr ""
+msgstr "待ち受けるアドレス。デフォルトは 0.0.0.0 (すべてのアドレス)"
 
 # a4f4605528a4403da9c93b932c8aa79c
 #: ../../plugin.rst:194
 msgid "This plugin uses MessagePack for the protocol::"
-msgstr ""
+msgstr "このプラグインはプロトコルとして MessagePack を使います::"
 
 # 8fae503f93a644b59175412d6f00472b
 # abb03c0613bc4e93960f4c6d70716606
 #: ../../plugin.rst:227 ../../plugin.rst:460
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 # 0c0007f8d2c84b6da0963d6b58c3ae2b
 #: ../../plugin.rst:229
@@ -342,6 +394,9 @@ msgid ""
 "**exec** input plugin executes external program to receive or pull event "
 "logs. This reads TSV (tab separated values) from the stdout of the program."
 msgstr ""
+"**exec** インプットプラグインは、イベントログを受信または取得するために外部プ"
+"ログラムを実行します。これはプログラムのstdoutからTSV (tab separated values)"
+"を読み取ります。"
 
 # 8005d549ecc246768935efab72162081
 #: ../../plugin.rst:231
@@ -349,21 +404,23 @@ msgid ""
 "You can run the program periodically or permanently. To run periodically, "
 "use ``run_interval`` parameter."
 msgstr ""
+"あなたはプログラムを定期的また永続的に実行できます。定期的に実行するためには "
+"``run_interval`` パラメータを使います。"
 
 # f26207ec76cc403b86361c8fc8c0d4f5
 #: ../../plugin.rst:247
 msgid "The command to execute."
-msgstr ""
+msgstr "実行するコマンド。"
 
 # 9f248404a232486bb2def0a29ee5c2dc
 #: ../../plugin.rst:250
 msgid "Column names of the output TSV."
-msgstr ""
+msgstr "出力TSVの列名。"
 
 # 45959ab5cc2145c69790cce965630a4e
 #: ../../plugin.rst:253
 msgid "tag of the output events."
-msgstr ""
+msgstr "出力イベントのタグ。"
 
 # f4ac6300a13e456b99ac2f2986520266
 #: ../../plugin.rst:256
@@ -371,6 +428,8 @@ msgid ""
 "Name of the key to use as the event tag instead of the value in the event "
 "record. If this parameter is not specified, it uses the ``tag`` parameter."
 msgstr ""
+"Name of the key to use as the event tag instead of the value in the event "
+"record.このパラメータが指定されていない場合は ``tag`` パラメータを使います。"
 
 # 8dad088970bb4913952cd9ce3003f1e6
 #: ../../plugin.rst:259
@@ -386,16 +445,18 @@ msgid ""
 "Format of the event time used when the ``time_key`` parameter is specified. "
 "Default is UNIX time (integer)."
 msgstr ""
+"``time_key`` パラメータが指定されている場合に使用されるイベント日時の形式。デ"
+"フォルトはUNIX time(整数)です。"
 
 # deca2b83caea48e2b6f566527f0a2ad4
 #: ../../plugin.rst:265
 msgid "Runs the program periodically in the specified interval."
-msgstr ""
+msgstr "指定された間隔で定期的にプログラムを実行します。"
 
 # bc26da3f14b3483998891142889dc75d
 #: ../../plugin.rst:271
 msgid "Buffered output plugins"
-msgstr ""
+msgstr "バッファアウトプットプラグイン"
 
 # c9df8de61f2f455b98cb9f6005bb4c65
 #: ../../plugin.rst:273
@@ -403,11 +464,13 @@ msgid ""
 "Most of output plugins are *buffered* which accumulates new events on memory "
 "or files."
 msgstr ""
+"ほとんどのアウトプットプラグインは、新しいイベントをメモリやファイルに蓄積す"
+"るバッファ(*buffered*)アウトプットプラグインです。"
 
 # bbefa6bbebc843a4b2a167dca3f0d2ed
 #: ../../plugin.rst:275
 msgid "The structure of the buffer is a queue of chunks like following::"
-msgstr ""
+msgstr "バッファの構造は次のようなチャンクのqueueとなります::"
 
 # 59e1dd298e6746b4a867ed050c360242
 #: ../../plugin.rst:290
@@ -416,8 +479,11 @@ msgid ""
 "elapsed (*flush_interval*), new empty chunk is pushed. The bottom chunk is "
 "written out immediately when new chunk is pushed."
 msgstr ""
+"チャンクのサイズが上限(*buffer_chunk_limit*)に達するか、または指定された時間"
+"を経過(*flush_interval*)すると、新しい空のチャンクがpushされます。一番下の"
+"チャンクは新しいチャンクが上にpushされた際に瞬時に書き出されます。"
 
-# af33ebf5b5c143e2b17ab4eae550732b
+# TODO: 推敲
 #: ../../plugin.rst:293
 msgid ""
 "If it failed to write, the chunk is left in the queue and retried to write "
@@ -426,6 +492,11 @@ msgid ""
 "increases twice and twice (1.0sec, 2.0sec, 4.0sec, ...). If the length of "
 "the queue exceeds limit (*buffer_queue_limit*), new events are rejected."
 msgstr ""
+"もし書き込みに失敗した場合、チャンクはqueueに残され、数秒(*retry_wait*)後に再"
+"試行されます。再試行回数が制限(*retry_limit*)を超えている場合、チャンク破棄さ"
+"れます。再試行の待機時間は前回の2倍(1.0sec, 2.0sec, 4.0sec, …)になります。"
+"queueの長さが制限(*buffer_queue_limit*)を超えた場合、新しいイベントは拒否され"
+"ます。"
 
 # b88540d7ffcc4b48956d45d40e543f09
 #: ../../plugin.rst:297
@@ -438,13 +509,17 @@ msgstr ""
 msgid ""
 "*buffer_type* specifies the type of buffer plugin. Default is ``memory``."
 msgstr ""
+"*buffer_type* はバッファプラグインのタイプを指定します。デフォルトでは "
+"``memory`` です。"
 
-# d2e260d50b4643b7acd06fe6548dae19
+# TODO: decimalが型か10進数か確認
 #: ../../plugin.rst:310
 msgid ""
 "Suffixes \"s\" (seconds), \"m\" (minutes), \"h\" (hours) can be used for "
 "*flush_interval* and *retry_wait*. *retry_wait* can be a decimal."
 msgstr ""
+"接尾辞  \"s\" (seconds), \"m\" (minutes), \"h\" (hours) は *flush_interval* "
+"と *retry_wait* で使用できます。 *retry_wait* はdecimalになりえます。"
 
 # 10f8603a8ebd4192802611cbb451b201
 #: ../../plugin.rst:312
@@ -452,12 +527,14 @@ msgid ""
 "Suffixes \"k\" (KB), \"m\" (MB), \"g\" (GB) can be used for "
 "*buffer_chunk_limit*."
 msgstr ""
+"接尾辞 \"k\" (KB), \"m\" (MB), \"g\" (GB) は *buffer_chunk_limit* で使用でき"
+"ます。"
 
 # 1d28495a36354b6381b4f598b89f4520
 # c67dd004d7634054b1c7fd209d50ced3
 #: ../../plugin.rst:316 ../../plugin.rst:633
 msgid "file"
-msgstr ""
+msgstr "file"
 
 # 964b734eea314aff8cca25ffa56b68c4
 #: ../../plugin.rst:318
@@ -467,6 +544,10 @@ msgid ""
 "are created. If you want to output the logs hourly or minutely, please "
 "modify 'time_slice_format' value."
 msgstr ""
+"**file** バッファアウトプットプラグインはファイルにイベントを書き出します。デ"
+"フォルトでは日ベース(おおむね00:10)のファイルに書き出します。それ以前にはファ"
+"イルは作成されません。もしあなたが分毎または時間毎にログを出力したいのであれ"
+"ば、'time_slice_format'の値を変更してください。"
 
 # 10c95216437748f9a8d754db656c7088
 #: ../../plugin.rst:333
@@ -474,66 +555,68 @@ msgid ""
 "Path of the file. Actual path becomes path + time + \".log\". See also "
 "``time_slice_format`` parameter descried below."
 msgstr ""
+"ファイルのpath。正確なpathはpath+time+\".log\"となります。 "
+"``time_slice_format`` については以下を参照してください。"
 
 # 61ded2b7845646298f5558d451153cb9
 #: ../../plugin.rst:338
 msgid "%Y"
-msgstr ""
+msgstr "%Y"
 
 # a5924e52cbd14a44ac86598525efeee8
 #: ../../plugin.rst:338
 msgid "Year with century"
-msgstr ""
+msgstr "年"
 
 # 07bfb8ac8dee454588d26b40c631cdd9
 #: ../../plugin.rst:340
 msgid "%m"
-msgstr ""
+msgstr "%m"
 
 # bbe7519130b54bc7a55b635d2b756d37
 #: ../../plugin.rst:340
 msgid "Month of the year (01..12)"
-msgstr ""
+msgstr "月 (01..12)"
 
 # dc701e785e3e4f649c79cce4285970be
 #: ../../plugin.rst:342
 msgid "%d"
-msgstr ""
+msgstr "%d"
 
 # 3860541d6fd14ffe9d4024444345035e
 #: ../../plugin.rst:342
 msgid "Day of the month (01..31)"
-msgstr ""
+msgstr "日 (01..31)"
 
 # 4126c7029f3949889e31f40c93bf50e3
 #: ../../plugin.rst:344
 msgid "%H"
-msgstr ""
+msgstr "%H"
 
 # 03806eb8ca1549698b7eedf115f7475d
 #: ../../plugin.rst:344
 msgid "Hour of the day, 24-hour clock (00..23)"
-msgstr ""
+msgstr "時, 24時間表記 (00..23)"
 
 # 19894c565e044ee0ba4288c6d9e9d0cd
 #: ../../plugin.rst:346
 msgid "%M"
-msgstr ""
+msgstr "%M"
 
 # 85ec094e59ee437e8fb99ab9fbe3ae29
 #: ../../plugin.rst:346
 msgid "Minute of the hour (00..59)"
-msgstr ""
+msgstr "分 (00..59)"
 
 # f01248f66f2c4fa3ade8809ba73a0932
 #: ../../plugin.rst:348
 msgid "%S"
-msgstr ""
+msgstr "%S"
 
 # 6c5520c1cee049a4802b39f95118f6d5
 #: ../../plugin.rst:348
 msgid "Second of the minute (00..60)"
-msgstr ""
+msgstr "秒 (00..60)"
 
 # dc5d67b952ef404188ff114ce7732f08
 #: ../../plugin.rst:350
@@ -541,21 +624,25 @@ msgid ""
 "Default is ``%Y%m%d`` which splits files every day. Use ``%Y%m%d%H`` to "
 "split files every hour."
 msgstr ""
+"デフォルトは ``%Y%m%d`` でファイルは日毎に分割されます。時毎に分割するには ``"
+"%Y%m%d%H`` を使用してください。"
 
 # a54d5c1ec7f34402b685f24e546115d4
 #: ../../plugin.rst:353
 msgid "Wait time before flushing the buffer. Default is 10 minutes."
-msgstr ""
+msgstr "バッファをフラッシュするまでの待機時間。デフォルトは10分です。"
 
 # 0d1ea3474a064e4a95733892684fbeb2
 #: ../../plugin.rst:356
 msgid "Format of the time written in files. Default is ISO-8601."
 msgstr ""
+"ファイルに書き込まれる日時のフォーマットを指定します。デフォルトはISO-8601で"
+"す。"
 
 # 1924ae98649d4763a8197e3c9a035dda
 #: ../../plugin.rst:359
 msgid "Uses UTC for path formatting. Default is localtime."
-msgstr ""
+msgstr "UTCはpathの形式として使われています。デフォルトはlocaltimeです。"
 
 # 3fe6adb91d434f91bb534cc4631abbb0
 #: ../../plugin.rst:362
@@ -563,17 +650,22 @@ msgid ""
 "Compress flushed files. Supported algorithm is gzip. Default is no-"
 "compression."
 msgstr ""
+"フラッシュされたファイルを圧縮します。サポートされるアルゴリズムはgzipです。"
+"デフォルトでは圧縮されません。"
 
 # ec65660b24cd4a758cdf9f06198e332b
 #: ../../plugin.rst:364
 msgid "Note that this output plugin uses file buffer by default."
 msgstr ""
+"注意: デフォルトではこのアウトプットプラグインはファイルバッファを使います。"
 
 # 74f2698ed631467c879e6f10a1bfe79e
 #: ../../plugin.rst:370
 msgid ""
 "**forward** buffered output plugin forwards events to other fluentd servers."
 msgstr ""
+"**forward** バッファの output pluginは他のfluentd serversにイベントを転送しま"
+"す。"
 
 # 498aa5ffa4544a46beba00f520bcbfec
 #: ../../plugin.rst:372
@@ -581,6 +673,9 @@ msgid ""
 "This plugin supports load-balancing and automatic fail-over (a.k.a. active-"
 "active backup). If you want replication, use ``copy`` plugin described below."
 msgstr ""
+"このプラグインは load-balancing及び、automatic fail-over (a.k.a. active-"
+"active backup)をさポートしています。レプリケーションをしたい場合は、後述の  "
+"``copy`` プラグインを使用してください。"
 
 # 3e692145b4bb49ad88761a18399bfec4
 #: ../../plugin.rst:374
@@ -588,28 +683,30 @@ msgid ""
 "It detects fault of a server using \"φ accrual failure detector\" algorithm. "
 "You can customize parameter of the algorithm."
 msgstr ""
+"\"φ accrual failure detector\"アルゴリズムを使用してサーバーの障害を検出しま"
+"す。あなたはアルゴリズムのパラメータをカスタマイズすることができます。"
 
 # 0b88c818c8b94e2aaa030f6dcf6fd8ea
 #: ../../plugin.rst:376
 msgid ""
 "When a fault server recovers, the plugin makes it available automatically "
 "after several seconds."
-msgstr ""
+msgstr "障害サーバーが復旧した場合、プラグインは数秒後に自動で復旧します。"
 
 # 43b685b440064c5cbbf0b275a985a73b
 #: ../../plugin.rst:410
 msgid "Description of a server."
-msgstr ""
+msgstr "サーバーの詳細"
 
 # 59d07d6ce3d84a178d223124caaf4dce
 #: ../../plugin.rst:413
 msgid "Name of the server. This parameter is used in error messages."
-msgstr ""
+msgstr "サーバーの名前。このパラメータはエラーメッセージで使用されます。"
 
 # 2f527390a77c49c2a33cb53050f0c1f0
 #: ../../plugin.rst:416
 msgid "IP address or host name of the server. This parameters is required."
-msgstr ""
+msgstr "サーバーのIPアドレスまたはホスト名。このパラメータは必須です。"
 
 # c736740f59884cc69099c3885a1dc71d
 #: ../../plugin.rst:419
@@ -617,6 +714,9 @@ msgid ""
 "Port number of the host. Default is 24224. Note that both TCP packets (event "
 "stream) and UDP packets (heartbeat message) are sent to this port."
 msgstr ""
+"ホストのポート番号。デフォルトは24224です。TCPパケット(event stream) とUDPパ"
+"ケット(heartbeat message) の両方がこのポートに送信されることに注意してくださ"
+"い。"
 
 # a11a9c0f20884b18bf872faaf953dcdb
 #: ../../plugin.rst:422
@@ -624,27 +724,30 @@ msgid ""
 "Weight of load balancing. For example, weight of a server is 20 and weight "
 "of the other server is 30, events are sent in 2:3 raito. Default is 60."
 msgstr ""
+"負荷分散の重み。たとえば、とあるサーバーの重みが20で他のサーバーの重みが30の"
+"とき、イベントは2:3のレートで送信されます。デフォルトは60です。"
 
 # b1e88f0ac37d45c4914607e5f80f0cf9
 #: ../../plugin.rst:425
 msgid "Timeout time to send event logs. Default is 60 seconds."
-msgstr ""
+msgstr "イベントログを送信するタイムアウト時間。デフォルトは60秒です。"
 
 # 1fc24b237f99426a8bd920894d5d9002
 #: ../../plugin.rst:428
 msgid ""
 "Wait time before accepting recovery of a fault server. Default is 10 seconds."
 msgstr ""
+"障害から復旧したサーバーを受け入れる前に待つ秒数。デフォルトは10秒です。"
 
 # 62e3633531f443dd9e9e255f212d2945
 #: ../../plugin.rst:431
 msgid "Interval of heartbeat packer. Default is 1 second."
-msgstr ""
+msgstr "ハートビートパケットの間隔。デフォルトは1秒です。"
 
 # 81832917d6cd41078ebbe9706f4f7573
 #: ../../plugin.rst:434
 msgid "Threshold parameter to detect fault of a server. Default is 8."
-msgstr ""
+msgstr "サーバーの障害を検出するしきい値。デフォルトは8です。"
 
 # e6b8a386b15e4dcfbceb580e29ff7652
 #: ../../plugin.rst:437
@@ -652,6 +755,8 @@ msgid ""
 "Hard timeout to detect failure of a server. Default is same as the "
 "``send_timeout`` parameter."
 msgstr ""
+"サーバーの障害を検出するハードタイムアウト。デフォルトは ``send_timeout`` パ"
+"ラメータと同一です。"
 
 # 4dd3083cca3f4e30b5b23452b1a1835a
 #: ../../plugin.rst:440
@@ -659,6 +764,8 @@ msgid ""
 "Backup destination which is used when all servers are not available. This "
 "parameter is optional."
 msgstr ""
+"すべてのサーバーが利用できない場合に使用されているバックアップ先。このパラ"
+"メータはオプションです。"
 
 # 857ac4bade8e45278f18a36b7ffbacb2
 #: ../../plugin.rst:462
@@ -666,8 +773,10 @@ msgid ""
 "The **exec** buffered output plugin passes events to an external program as "
 "a tab-separated value (TSV) file."
 msgstr ""
+"**exec** バッファアウトプットプラグインはイベントを外部プログラムにtab-"
+"separated value (TSV) として受け渡します。"
 
-# ba04954c818040a397cef3fa9bb535cf
+# TODO: 最後の引数がTSVそのものなのか場所なのか分からないので保留
 #: ../../plugin.rst:464
 msgid ""
 "The command is passed the location of a TSV file containing incoming events "
@@ -680,11 +789,12 @@ msgid ""
 "A command to execute. The exec plugin passes the path of a TSV file as the "
 "last argument."
 msgstr ""
+"実行するコマンド。execはTSVファイルのpathを最後の引数として受け渡します。"
 
 # bfd7b78129b244eda3ab6642510be730
 #: ../../plugin.rst:481
 msgid "Comma-separated keys to use in the TSV file."
-msgstr ""
+msgstr "TSVファイルで使用するカンマ区切りのキー。"
 
 # 5034f2fe6b1a45f294a9a1d61843c0ba
 # cb326aa06b7c4fd09d0e72e4ad8bd0ce
@@ -708,11 +818,13 @@ msgid ""
 "Format for event time used when the ``time_key`` parameter is specified. "
 "Default is UNIX time (integer)."
 msgstr ""
+"``time_key`` パラメータが指定されている場合のイベント日時フォーマット。デフォ"
+"ルトではUNIX time (整数)"
 
 # 77a4e7c74f584f8c858e309280b60cb8
 #: ../../plugin.rst:494
 msgid "exec_filter"
-msgstr ""
+msgstr "exec_filter"
 
 # 05bceec961554a5f8d9ab784bed08c07
 #: ../../plugin.rst:496
@@ -726,6 +838,8 @@ msgstr ""
 msgid ""
 "It passes tab-separated values (TSV) to stdin and reads TSV from stdout."
 msgstr ""
+"それはtab-separated values (TSV)をstdoutから読み取り、TSVをstdinに受け渡しま"
+"す。"
 
 # 57921d6ab17e4e76ad76a99122e465ca
 #: ../../plugin.rst:513
@@ -733,6 +847,8 @@ msgid ""
 "A command to execute. The exec plugin passes a path of TSV file to the last "
 "argument."
 msgstr ""
+"実行コマンド。execプラグインはTSVファイルのpathを最後の引数として受け渡しま"
+"す。"
 
 # ec97e24db48c4de294caa2ee779aeae2
 #: ../../plugin.rst:516
@@ -750,28 +866,30 @@ msgstr ""
 # d9e29471c2364219a1e568558ed6fe2d
 #: ../../plugin.rst:532
 msgid "Non-buffered output plugins"
-msgstr ""
+msgstr "非バッファアウトプットプラグイン"
 
 # b557b20317904446b233fe8cf93d72ba
 #: ../../plugin.rst:535
 msgid "copy"
-msgstr ""
+msgstr "copy"
 
 # 50c372b001294b688a9b6123f6b8b77c
 #: ../../plugin.rst:537
 msgid "**copy** output plugin copies events to multiple outputs."
-msgstr ""
+msgstr "**copy** アウトプットプラグインは複数の出力へイベントをコピーします。"
 
 # 077f02167edc4421a2979b932fc7b35f
 # f18a9073fed74e2f8fb92415b52a630c
 #: ../../plugin.rst:558 ../../plugin.rst:585
 msgid "Specifies output plugin. The format is same as <match> directive."
 msgstr ""
+"アウトプットプラグインを指定します。フォーマットは<match>ディレクティブと同じ"
+"です。"
 
 # 8774f6fa66544d04bf70be2a15585ce0
 #: ../../plugin.rst:562
 msgid "roundrobin"
-msgstr ""
+msgstr "roundrobin"
 
 # b382c8abda444916bee7b89eba7852bc
 #: ../../plugin.rst:564
@@ -779,41 +897,43 @@ msgid ""
 "**roundrobin** output plugin distributes events to multiple outputs using "
 "round-robin algorithm."
 msgstr ""
+"**roundrobin** アウトプットプラグインはラウンドロビンアルゴリズムを使って復習"
+"の出力へイベントを配信します。"
 
 # 70183463ab68478496fbe229441c654d
 #: ../../plugin.rst:589
 msgid "stdout"
-msgstr ""
+msgstr "stdout"
 
 # fa547d264d884ad2a827511b4a49b067
 #: ../../plugin.rst:591
 msgid "**stdout** output plugin prints event to the console."
-msgstr ""
+msgstr "**stdout** アウトプットプラグインはコンソールにイベントを表示します。"
 
 # 8baf95c8abf1449ab4b1ec01eee804ed
 #: ../../plugin.rst:599
 msgid "This output plugin is for debugging."
-msgstr ""
+msgstr "このアウトプットプラグインはデバッグ用です。"
 
 # 9ad4d30cb1d6454b90699344c6c519d2
 #: ../../plugin.rst:603
 msgid "null"
-msgstr ""
+msgstr "null"
 
 # 0d640b0bbd4e48c2818738bb03810e4f
 #: ../../plugin.rst:605
 msgid "**null** output plugin just throw away events."
-msgstr ""
+msgstr "**null** アウトプットプラグインはイベントを破棄します。"
 
 # 993992a944da4953bf42888479aec2c7
 #: ../../plugin.rst:617
 msgid "Buffer plugins"
-msgstr ""
+msgstr "バッファプラグイン"
 
 # ac5f6e5ceca2451191bd1f8faef5b8b9
 #: ../../plugin.rst:620
 msgid "memory"
-msgstr ""
+msgstr "memory"
 
 # 1cfe235b4ccf4205a2b687d1dcc56939
 #: ../../plugin.rst:622
@@ -822,6 +942,9 @@ msgid ""
 "to store buffer chunks. Buffered events which can't be written soon are "
 "deleted when fluentd is shut down."
 msgstr ""
+"**memory** バッファプラグインは高速なバッファ実装を提供します。これはバッファ"
+"チャンクを格納するためにメモリを使います。すぐに書き込まれなかったバッファさ"
+"れたイベントはFluentdシャットダウン時に削除されます。"
 
 # c33ddc9a5baa49c88d9f2ba197e7673d
 #: ../../plugin.rst:635
@@ -829,6 +952,8 @@ msgid ""
 "**file** buffer plugin provides persistent buffer implementation. It uses "
 "file to store buffer chunks."
 msgstr ""
+"**file** バッファプラグインは永続的なバッファ実装を提供します。これはバッファ"
+"チャンクを格納するためにファイルを使います。"
 
 # 32900356e3b4419e89c604ec6af43361
 #: ../../plugin.rst:646
@@ -836,11 +961,13 @@ msgid ""
 "Path to store buffer chunks. '*' is replaced with random characters. This "
 "parameter is required."
 msgstr ""
+"バッファチャンクを格納するpath。'*'はランダムな文字で置き換えられます。このパ"
+"ラメータは必須です。"
 
 # 2a24e71e363d4708a13e896ccdc0bdea
 #: ../../plugin.rst:653
 msgid "Searching plugins"
-msgstr ""
+msgstr "プラグインの検索"
 
 # b15e7cb0b4e141699bc2ed5fd7174051
 #: ../../plugin.rst:655
@@ -848,18 +975,20 @@ msgid ""
 "You can find plugins released on RubyGems at the `Fluentd plugins <http://"
 "fluentd.org/plugin/>`_ page."
 msgstr ""
+"あなたは `Fluentdプラグイン <http://fluentd.org/plugin/>`_  ページでRubyGems"
+"にリリースされているプラグインを見つけることができます。"
 
 # cb02eb31dbd8411ea7d0af846a290aa9
 #: ../../plugin.rst:657
 msgid "You can also use following command to search plugins::"
-msgstr ""
+msgstr "またプラグインを検索するために次のコマンドが使用できます::"
 
 # 9ea9b6b33ad9455ba94b994074c3cc01
 #: ../../plugin.rst:661
 msgid "Type following command to install it::"
-msgstr ""
+msgstr "インストールするためには、次のコマンドを入力してください::"
 
 # 98019f823169400ab11c61b7ecbab5fa
 #: ../../plugin.rst:665
 msgid "Next step: :ref:`devel`"
-msgstr ""
+msgstr "次のステップ: :ref:`devel`"
