@@ -8,32 +8,36 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-08 21:05+0900\n"
-"Last-Translator:  <mazgi@gensole>\n"
+"PO-Revision-Date: 2012-09-18 14:17+0900\n"
+"Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
 
 # 3884b39bbe0749468d4a2a26db8771de
 #: ../../overview.rst:4
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
-# e235fc564821453bbb9ad49bfd8bc3af
+# frsyukiさんに規模について確認
 #: ../../overview.rst:6
 msgid ""
 "**Fluentd** is a log collector daemon, which treats logs as JSON stream. So "
 "far, the largest user collects logs from 100+ servers, 650 GB daily, with "
 "70,000 msgs/sec at peak time."
 msgstr ""
+"**Fluentd** はログをJSONストリームとして扱うログ収集デーモンです。これまでの"
+"大規模なユーザーはログを収集します、70,000メッセージ/秒, 100台以上のサー"
+"バー, 1日あたり650GB。"
 
 # 593b4c679dbb4feaa0df91418c2c7c83
 #: ../../overview.rst:9
 msgid "Purpose"
-msgstr ""
+msgstr "目的"
 
 # 10221766e7e64a8dbdcca85b9c4487ca
 #: ../../overview.rst:11
@@ -43,49 +47,54 @@ msgid ""
 "logs, these services can be improved greatly. However, collecting these logs "
 "in a simple and reliable manner remains a challenge."
 msgstr ""
+"最近のWebおよびモバイルアプリケーションはとても大きなイベントログ(**event "
+"logs**)を生み出します(例: ログイン, ログアウト, 決済, フォローなど)。これらの"
+"イベントログを分析することにより、これらのサービスは大きく向上できます。しか"
+"し、シンプルかつ信憑性の高い方法で、これらのログを収集するという課題が残され"
+"ています。"
 
 # 572f9e9b1e46464cad53c5f41f555bae
 #: ../../overview.rst:13
 msgid ""
 "Fluentd solves this problem by providing the user with the following "
 "features:"
-msgstr ""
+msgstr "Fluentdは、下記機能をユーザーに提供することでこの課題を解決します:"
 
 # 451757133eb04c5b854b030eb5592301
 # ccd9473d149a46069353743afffc4e01
 #: ../../overview.rst:15 ../../overview.rst:23
 msgid "Easy Installation"
-msgstr ""
+msgstr "簡単なインストール"
 
 # 6aa8677245064e7996e67f92ee1b4038
 # 30b941aa7a0048e2a1beff884f8acf84
 #: ../../overview.rst:16 ../../overview.rst:28
 msgid "Small Footprint"
-msgstr ""
+msgstr "スモールフットプリント"
 
 # 2c30d881c69a42578a8862a453a1fc63
 # 31367900384e4318a40bbbb41ca43913
 #: ../../overview.rst:17 ../../overview.rst:51
 msgid "Semi-Structured Data Logging"
-msgstr ""
+msgstr "半構造データによるロギング"
 
 # f27c407fcd7e461eb659ec445411c263
 # d4e8b25d17844e0eb80e75affc8efaff
 #: ../../overview.rst:18 ../../overview.rst:56
 msgid "Flexible Plugin Mechanism"
-msgstr ""
+msgstr "柔軟なプラグイン機構"
 
 # 9edc397ed9804ed1b552d763efecdb5c
 # e993c99d946549db81acfefff5f95a3e
 #: ../../overview.rst:19 ../../overview.rst:63
 msgid "Reliable Buffering"
-msgstr ""
+msgstr "信頼できるバッファリング"
 
 # 23d980b387b74a6b93fe19626e39f30c
 # 3af52e571aa743889defd754c1e7d78e
 #: ../../overview.rst:20 ../../overview.rst:89
 msgid "Log Forwarding"
-msgstr ""
+msgstr "ログ転送"
 
 # aa26b9869c1c413fa2463f80af958bd6
 #: ../../overview.rst:25
@@ -93,6 +102,8 @@ msgid ""
 "**Fluentd** is packaged as a Ruby gem. It can be installed with a single "
 "command."
 msgstr ""
+"**Fluentd** はRubyのgemとしてパッケージされています。そのためコマンドを1つ実"
+"行するだけでインストールできます。"
 
 # ac8efe45f40d4b32908199b088b7515f
 #: ../../overview.rst:30
@@ -101,21 +112,24 @@ msgid ""
 "of Ruby. Fluentd collects events from various **input** sources and writes "
 "them to **output** sinks."
 msgstr ""
+"アーキテクチャはシンプルで、Fluentdのコアはわずか3,000行のRubyコードで構成さ"
+"れています。Fluentdは、さまざまな入力元(**input** sources)からイベントを収集"
+"し、 出力先(**output** sinks)に書き込みます。"
 
 # 185bc4ddea1d45d1892f8a2f9fd65fb3
 #: ../../overview.rst:32
 msgid "Input Examples: HTTP, Syslog, Apache Log"
-msgstr ""
+msgstr "入力元の例: HTTP, Syslog, Apache Log"
 
 # f25d034b86b54e50846267100b5041a2
 #: ../../overview.rst:33
 msgid "Output Examples: Files, Mails, RDBMS databases, NoSQL storages"
-msgstr ""
+msgstr "出力先の例: Files, Mails, RDBMS databases, NoSQL storages"
 
 # 988277afd1284352b3421a7f7b7e63c3
 #: ../../overview.rst:35
 msgid "The figure below shows the basic idea of **input** and **output**::"
-msgstr ""
+msgstr "下の図は **input** と **output** の基本的な考え方を示しています::"
 
 # 063180efdd6941b8ac2156b800258f6a
 #: ../../overview.rst:53
@@ -125,6 +139,10 @@ msgid ""
 "to categorize events. Time is the UNIX time when the event occurs. Record is "
 "a JSON object."
 msgstr ""
+"収集されたイベントログは、タグ(*tag*), 日時(*time*), レコード(*record*)という"
+"3つの要素で構成されます。タグは'.'で区切られた文字列(例: myapp.access)で、イ"
+"ベントをカテゴリに分類するために使われます。日時はイベントが発生したUNIX time"
+"を示します。レコードはJSONオブジェクトです。"
 
 # f084968c6aaa413590cca55e3720a6b6
 #: ../../overview.rst:58
@@ -133,8 +151,11 @@ msgid ""
 "appropriate Ruby plugins; they can then be published via Ruby gems. The list "
 "of available plugins can be seen with the following command::"
 msgstr ""
+"Fluentdの入力元と出力先は、適切なRuby pluginsを作成することによって拡張できま"
+"す。また作成したプラグインはRuby gemsで公開することができます。使用可能なプラ"
+"グインのリストは次のコマンドで確認出来ます::"
 
-# 04579b277cdc4927ae6ed9165fa18671
+# frsyukiさんにニュアンス確認
 #: ../../overview.rst:65
 msgid ""
 "In traditional systems, event logs can be lost when an unexpected output "
@@ -143,6 +164,11 @@ msgid ""
 "Fluentd’s buffer, a queue of chunks containing the event logs, temporarily "
 "stores the collected events::"
 msgstr ""
+"'伝統的'なシステムでは、出力時に予期せぬ障害が発生した場合、イベントログが失"
+"われることを許容していました(例: ネットワーク障害)。Fluentdはこの課題と戦うた"
+"めに設計されており、信頼できるバッファリングという戦略を備えています。Fluentd"
+"のバッファは、イベントログを含んだチャンク(chunks)のqueueとなっており、収集さ"
+"れたイベントを一時的に格納します::"
 
 # 55a28f574ce341b48bdaebd4011338e8
 #: ../../overview.rst:80
@@ -151,6 +177,9 @@ msgid ""
 "appended to the top chunk in the buffer. This operation for temporary "
 "storage is never blocked, even if the next server is down."
 msgstr ""
+"Fluentdが入力元からイベントを受信すると、イベントログがバッファ内の一番上の"
+"チャンクに追加されます。一時的に格納するためこの操作は、たとえ送信先のサーバ"
+"がダウンしても妨げられることはありません。"
 
 # d0ae3d4b77af41649ee170f7ea905ef5
 #: ../../overview.rst:82
@@ -158,6 +187,8 @@ msgid ""
 "A new empty chunk is pushed onto the top of the queue when either (1) the "
 "size of the top chunk reaches its limit, or (2) the timer expires."
 msgstr ""
+"新しい空のチャンクは、(1)一番上のチャンクのサイズが限界に達する、もしくは(2)"
+"時間切れになった際にqueueの一番上に作られます。"
 
 # c1a587979d7246b48bb585359ce36bd0
 #: ../../overview.rst:84
@@ -167,6 +198,9 @@ msgid ""
 "removed from the queue. Otherwise, the thread leaves the chunk in the queue "
 "and will try again later."
 msgstr ""
+"別のスレッドが一番下のチャンクを送信先のサーバーまたはストレージサーバーに書"
+"き出します。この書き込みが成功した場合、チャンクはqueueから削除されます。その"
+"他の場合、スレッドはチャンクをqueueに残し再試行します。"
 
 # 02f2b85a7c354c748ec29e368592bcce
 #: ../../overview.rst:86
@@ -175,6 +209,9 @@ msgid ""
 "stores the chunks in memory. It is fast but not persistent. Another plugin, "
 "'File', stores the chunks in file."
 msgstr ""
+"Fluentdのバッファ実装はプラガブルです。デフォルトのプラグインは'Memory'で、"
+"チャンクをメモリに格納します。これは高速ですが永続的ではありません。他"
+"に'File'があり、これはチャンクをファイルに格納します。"
 
 # a6492450d3e24893aad419d48e82591a
 #: ../../overview.rst:91
@@ -185,8 +222,12 @@ msgid ""
 "the local logs of their Fluentd instances to the Fluentd instance of a "
 "central server::"
 msgstr ""
+"Fluentdはシングルノード構成とマルチノード構成の両方をサポートします。マルチ"
+"ノード構成の場合、Fluentdは、分析を行うため一カ所にイベントログを集積できるよ"
+"うにログの転送をサポートします。アプリケーションサーバ内のログを中央サーバー"
+"のFluentdインスタンスまで転送します::"
 
 # 65bd8a04f1774e4fb7c9d217e27d2cdb
 #: ../../overview.rst:108
 msgid "Next step: :ref:`install`"
-msgstr ""
+msgstr "次のステップ: :ref:`install`"
