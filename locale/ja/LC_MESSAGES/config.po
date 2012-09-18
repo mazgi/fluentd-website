@@ -8,21 +8,22 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-08 21:05+0900\n"
-"Last-Translator:  <mazgi@gensole>\n"
+"PO-Revision-Date: 2012-09-18 16:52+0900\n"
+"Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
 
 # 110725b59f70468c94d68fcab2127de0
 #: ../../config.rst:4
 msgid "Configuration File"
-msgstr ""
+msgstr "設定ファイル"
 
-# 41e4ff7e9bf541e7ba282b17935a08ee
+# TODO: 推敲
 #: ../../config.rst:6
 msgid ""
 "The configuration file allows the user to control the input and output "
@@ -30,6 +31,9 @@ msgid ""
 "specifying the plugin parameters. The file is required for Fluentd to "
 "operate properly."
 msgstr ""
+"設定ファイルは、ユーザーに(1)input/outputプラグインの選択、(2)プラグインパラ"
+"メータの指定によるFluentdの入出力の振る舞いのコントロールを提供します。この"
+"ファイルはFluentdを正常に使用するために必要不可欠です。"
 
 # 1a2e38e94e5d4c89a3230cde7f3260c9
 #: ../../config.rst:8
@@ -38,31 +42,33 @@ msgid ""
 "If the file does not exist, the user must create it using the following "
 "commands::"
 msgstr ""
+"設定ファイルは $install_prefix/etc/fluent/fluent.conf に置かれます。ファイル"
+"が存在しない場合、ユーザーは次のコマンドで作成する必要があります::"
 
 # da096cd9d13f48afb72b1da64328084f
 #: ../../config.rst:13
 msgid "The configuration file must include the following:"
-msgstr ""
+msgstr "設定ファイルには以下が含まれている必要があります:"
 
 # 9715e995e2694f85a9a2280e9ae7e4f8
 #: ../../config.rst:15
 msgid "**<source>** directives which determine the input sources."
-msgstr ""
+msgstr "**<source>** ディレクティブ : 入力元の決定"
 
 # e4e2b8e675f74098a391d9acaee9f7aa
 #: ../../config.rst:16
 msgid "**<match>** directives which determine the output destinations."
-msgstr ""
+msgstr "**<match>** ディレクティブ : 出力先の決定"
 
 # f81678d143354a69a0ffb24e86f9661d
 #: ../../config.rst:18
 msgid "This document describes the format of the file."
-msgstr ""
+msgstr "このドキュメントでは、設定ファイルの書式について説明します。"
 
 # 365bb0e4801c49818dbd5e5b22a616de
 #: ../../config.rst:25
 msgid "<source> Directive"
-msgstr ""
+msgstr "<source> ディレクティブ"
 
 # 03bb488abea64c04a04d5214b42f6472
 #: ../../config.rst:27
@@ -71,6 +77,9 @@ msgid ""
 "input plugins using **<source>** directives. Fluentd's standard input "
 "plugins include ``http`` and ``forward``."
 msgstr ""
+"Fluentdの入力元は **<source>** ディレクティブを使用して使いたいインプットプラ"
+"グインを選択し設定することにより有効になります。Fluentdは標準的なインプットプ"
+"ラグインとして ``http`` と ``forward`` を含んでいます。"
 
 # cacfecb4db6f4450b274a4f13645b8f2
 #: ../../config.rst:29
@@ -78,22 +87,27 @@ msgid ""
 "Each **<source>** directive must include a ``type`` parameter. The ``type`` "
 "parameter specifies the chosen input plugin."
 msgstr ""
+"各 **<source>** ディレクティブは ``type`` パラメータを含んでいる必要がありま"
+"す。 ``type`` パラメータは選択した入力プラグインを指定します。"
 
 # 84de9046454f4419a0a3c3bf9416967e
 # 5b9cc5890ea94872b4525e995a5d9dea
 #: ../../config.rst:31 ../../config.rst:64
 msgid "Examples::"
-msgstr ""
+msgstr "例::"
 
-# fcdf566af372459b8b66eb5b70348470
+# TODO: 推敲
 #: ../../config.rst:46
 msgid ""
 "The user can expand Fluentd's input sources beyond those provided initially "
 "by writing their own plugins. For further information regarding Fluentd's "
 "input sources, please refer to :ref:`input_plugin`."
 msgstr ""
+"ユーザーは独自のプラグインを作成することによってFluentdの入力元を元々提供され"
+"ているものから拡張することができます。Fluentdの入力元に関する詳細情報について"
+"は、 :ref:`input_plugin` を参照してください。"
 
-# 229c4955127741099b2dd819a7a1d961
+# TODO: overviewとほぼ一緒なので相談
 #: ../../config.rst:48
 msgid ""
 "Sources submit events into the Fluentd's routing engine. An event consists "
@@ -103,11 +117,17 @@ msgid ""
 "JSON object. In the above example, the forward plugin submits the following "
 "event::"
 msgstr ""
+"ソースはFluentdのルーティグエンジンにイベントを送信します。イベントは、タグ"
+"(**tag**), 日時(**time**), レコード(**record**)という3つの要素で構成されま"
+"す。タグは'.'で区切られた文字列(例: myapp.access)で、Fluentd内部のルーティグ"
+"エンジンによって使われます。日時はイベントが発生したUNIX timeです。レコードは"
+"JSONオブジェクトです。上の例では、forwardプラグインは次のイベントを送信しま"
+"す::"
 
 # 37d1207369534f52a363678e3a551cbb
 #: ../../config.rst:56
 msgid "<match> Directive"
-msgstr ""
+msgstr "<match> ディレクティブ"
 
 # ea63dee4bb7844299d66c1386e47fc3f
 #: ../../config.rst:58
@@ -116,6 +136,9 @@ msgid ""
 "desired output plugins using **<match>** directives. Fluentd's standard "
 "output plugins include ``file`` and ``forward``."
 msgstr ""
+"Fluentdの出力先は **<match>** ディレクティブを使用して使いたいアウトプットプ"
+"ラグインを選択し設定することにより有効になります。Fluentdは標準的なアウトプッ"
+"トプラグインとして ``file`` と ``forward`` を含んでいます。"
 
 # f9535851d4e24d8ea0010d0b5a49058c
 #: ../../config.rst:60
@@ -125,6 +148,10 @@ msgid ""
 "whose **tag** matches the pattern will be sent to the output destination. "
 "The ``type`` parameter specifies the chosen output plugin."
 msgstr ""
+"各 **<match>** ディレクティブは ``type`` パラメータとマッチパターンを含んでい"
+"る必要があります。マッチパターンはイベントのフィルターとして使用されます。イ"
+"ベントのタグ(**tag**)がパターンとマッチした場合のみ出力先に送られます。 "
+"``type`` パラメータは選択した出力プラグインを指定します。"
 
 # 7991b9d306c648eb8b39c34fbe8b423c
 #: ../../config.rst:62
@@ -133,28 +160,32 @@ msgid ""
 "**`` to ``file`` in a specified directory."
 msgstr ""
 
-# e1693b9aceaa4d55a319ca277287509c
+# TODO: 推敲
+# TODO: たぶん原文がoutputとinput間違ってる
 #: ../../config.rst:79
 msgid ""
 "The user can expand Fluentd's input sources beyond those provided initially "
 "by writing their own plugins. For further information regarding Fluentd's "
 "output destinations, please refer to :ref:`output_plugin`"
 msgstr ""
+"ユーザーは独自のプラグインを作成することによってFluentdの入力元を元々提供され"
+"ているものから拡張することができます。Fluentdの出力先に関する詳細情報について"
+"は、 :ref:`output_plugin ` を参照してください。"
 
 # 0c57bf91606d4b2698d5be4dbdd6ea95
 #: ../../config.rst:82
 msgid "Match Pattern"
-msgstr ""
+msgstr "マッチパターン"
 
 # 66038a5cb08d4f859c0966b2af4eff36
 #: ../../config.rst:84
 msgid "The following match patterns are available to the user:"
-msgstr ""
+msgstr "次のマッチパターンがユーザーに提供されています:"
 
 # 411609f44eaa4121b8d6ab9360c2a360
 #: ../../config.rst:86
 msgid "``*`` matches a single tag element."
-msgstr ""
+msgstr "``*`` は１つのtag要素とマッチします。"
 
 # d578a22cb9b24d248fe1c1f5dd4ea828
 #: ../../config.rst:88
@@ -162,21 +193,24 @@ msgid ""
 "For example, pattern ``a.*`` matches ``a.b``, but does not match ``a`` or "
 "``a.b.c``"
 msgstr ""
+"例えば、 ``a.*`` は ``a.b`` と一致しますが、 ``a`` や ``a.b.c`` とは一致しま"
+"せん。"
 
 # 3145109fe8104c24b1b85d41d63d06cb
 #: ../../config.rst:90
 msgid "``**`` matches zero or more tag elements."
-msgstr ""
+msgstr "``**`` はゼロ個以上のtag要素と一致します。"
 
 # d8d4c1228d0e481b96e2dbb877df1e81
 #: ../../config.rst:92
 msgid "For example, pattern ``a.**`` matches ``a``, ``a.b`` and ``a.b.c``"
-msgstr ""
+msgstr "例えば、 ``a.**`` は ``a``, ``a.b``, ``a.b.c`` と一致します。"
 
 # caf623472594424db4de7bc126e9ee16
 #: ../../config.rst:94
 msgid "``{X,Y,Z}`` matches X, Y, or Z, where X, Y, and Z are match patterns."
 msgstr ""
+"``{X,Y,Z}`` は X, Y, Z にマッチします、なお X, Y, Z はマッチパターンです。"
 
 # f04ce5af985d4fad9fcfde2e78f50e0d
 #: ../../config.rst:96
@@ -184,6 +218,8 @@ msgid ""
 "For example, pattern ``{a,b}`` matches ``a`` and ``b``, but does not match "
 "``c``"
 msgstr ""
+"例えば、 ``{a,b}`` というパターンは ``a`` と ``b`` にはマッチしますが、 "
+"``c`` にはマッチしません。"
 
 # f85564b8e3234b79ac7295344efcbb8f
 #: ../../config.rst:98
@@ -195,7 +231,7 @@ msgstr ""
 # ddc5ef67cf1e43d382b7edda21b77792
 #: ../../config.rst:102
 msgid "Include"
-msgstr ""
+msgstr "インクルード"
 
 # 4fd69df531a8412ab4b184b2614299f8
 #: ../../config.rst:104
@@ -203,6 +239,8 @@ msgid ""
 "Directives in separate configuration files can be imported using the "
 "**include** directive::"
 msgstr ""
+"分割された設定ファイルのディレクティブは **include** ディレクティブを使用して"
+"読み込むことができます。"
 
 # 40571c7d743a4c4cbd33084492a76134
 #: ../../config.rst:109
@@ -210,8 +248,10 @@ msgid ""
 "The **include** directive supports regular file path, glob pattern, and http "
 "URL conventions::"
 msgstr ""
+"**include** ディレクティブは、通常のファイルpath, globパターン, HTTP URLをサ"
+"ポートします。"
 
 # 58bcd312ed9e48d08293d191ad0ee37f
 #: ../../config.rst:158
 msgid "Next step: :ref:`plugin`"
-msgstr ""
+msgstr "次のステップ: :ref:`plugin`"
