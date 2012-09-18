@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-18 14:17+0900\n"
+"PO-Revision-Date: 2012-09-18 16:32+0900\n"
 "Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Overview"
 msgstr "概要"
 
-# frsyukiさんに規模について確認
+# TODO: frsyukiさんに規模について確認
 #: ../../overview.rst:6
 msgid ""
 "**Fluentd** is a log collector daemon, which treats logs as JSON stream. So "
@@ -142,7 +142,7 @@ msgstr ""
 "収集されたイベントログは、タグ(*tag*), 日時(*time*), レコード(*record*)という"
 "3つの要素で構成されます。タグは'.'で区切られた文字列(例: myapp.access)で、イ"
 "ベントをカテゴリに分類するために使われます。日時はイベントが発生したUNIX time"
-"を示します。レコードはJSONオブジェクトです。"
+"です。レコードはJSONオブジェクトです。"
 
 # f084968c6aaa413590cca55e3720a6b6
 #: ../../overview.rst:58
@@ -155,7 +155,7 @@ msgstr ""
 "す。また作成したプラグインはRuby gemsで公開することができます。使用可能なプラ"
 "グインのリストは次のコマンドで確認出来ます::"
 
-# frsyukiさんにニュアンス確認
+# TODO: frsyukiさんにニュアンス確認
 #: ../../overview.rst:65
 msgid ""
 "In traditional systems, event logs can be lost when an unexpected output "
