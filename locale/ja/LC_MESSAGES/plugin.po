@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-10-06 01:08+0900\n"
+"PO-Revision-Date: 2012-10-06 02:06+0900\n"
 "Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -427,8 +427,8 @@ msgid ""
 "Name of the key to use as the event tag instead of the value in the event "
 "record. If this parameter is not specified, it uses the ``tag`` parameter."
 msgstr ""
-"Name of the key to use as the event tag instead of the value in the event "
-"record.このパラメータが指定されていない場合は ``tag`` パラメータを使います。"
+"イベントレコード内の値の代わりにイベントタグとして使う値のキー名。このパラ"
+"メータが指定されていない場合は ``tag`` パラメータを使います。"
 
 # 8dad088970bb4913952cd9ce3003f1e6
 #: ../../plugin.rst:259
@@ -436,6 +436,8 @@ msgid ""
 "Name of the key to use as the event time instead of the value in the event "
 "record. If this parameter is not specified, it uses the current time."
 msgstr ""
+"イベントレコード内の値の代わりにイベントタイムとして使う値のキー名。このパラ"
+"メータが指定されない場合は、現在時刻を使います。"
 
 # d9ac9d14df1946cabef3e6dd8e8d4b38
 # 17245696e5f94202b72ae19aaa7a9893
@@ -502,6 +504,8 @@ msgstr ""
 msgid ""
 "All buffered output plugins supports following parameters described above::"
 msgstr ""
+"すべてのバッファアウトプットプラグインは前述のように次のパラメータをサポート"
+"します::"
 
 # 3a529b3df33e43248dc783d754140b7c
 #: ../../plugin.rst:308
@@ -781,6 +785,8 @@ msgid ""
 "The command is passed the location of a TSV file containing incoming events "
 "as its last argument."
 msgstr ""
+"commandには最後の引数として、発生したイベントを含むTSVファイルの場所が受け渡"
+"されます。"
 
 # b6acc38efc3d4dec99c8913eec25b796
 #: ../../plugin.rst:478
@@ -801,7 +807,7 @@ msgstr "TSVファイルで使用するカンマ区切りのキー。"
 msgid ""
 "Name of the key to use as the event tag instead of the value in the event "
 "record."
-msgstr ""
+msgstr "イベントレコード内の値の代わりにイベントタグとして使う値のキー名。"
 
 # 7e3cf28f53154f59853155acccfce3a7
 # d39afca30ab94442ab2e4bc0f6e61efb
@@ -809,7 +815,7 @@ msgstr ""
 msgid ""
 "Name of the key to use as the event time instead of the value in the event "
 "record."
-msgstr ""
+msgstr "イベントレコード内の値の代わりにイベントタイムとして使う値のキー名。"
 
 # 2a1accb3dc5e4483b7d3721c0effadab
 #: ../../plugin.rst:490
@@ -831,6 +837,8 @@ msgid ""
 "**exec_filter** buffered output plugin executes an external program, using "
 "events as input and reading new events from the program output."
 msgstr ""
+"**exec_filter** バッファアウトプットプラグインは外部プログラムを実行し、イベ"
+"ントを入力に使い、プログラム出力から新しいイベントを読み取ります。"
 
 # 33da7b7cc07148d4b9f3ca27f4f30353
 #: ../../plugin.rst:498
@@ -855,12 +863,14 @@ msgid ""
 "Comma-separated keys to use from the incoming event for the TSV input to the "
 "command."
 msgstr ""
+"Comma-separated keysはTSVが入力されるイベントからコマンドまでに使用されます。"
 
 # e13be457d266476ca999327cb9bbf076
 #: ../../plugin.rst:519
 msgid ""
 "Comma-separated keys to use in processing the TSV output from the program."
 msgstr ""
+"Comma-separated keysはプログラムからTSV出力を処理する際に使用されます。"
 
 # d9e29471c2364219a1e568558ed6fe2d
 #: ../../plugin.rst:532
