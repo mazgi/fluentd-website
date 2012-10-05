@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fluentd 0.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-08 21:04\n"
-"PO-Revision-Date: 2012-09-18 16:52+0900\n"
+"PO-Revision-Date: 2012-10-06 00:12+0900\n"
 "Last-Translator: MATSUKI Hidenori <MATSUKI.Hidenori@gmail.com>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -159,6 +159,8 @@ msgid ""
 "For example, the user can send all matches to the pattern ``myapp.accesslog."
 "**`` to ``file`` in a specified directory."
 msgstr ""
+"例えば、ユーザーは ``myapp.accesslog.**`` パターンに一致するすべてを、指定し"
+"たディレクトリ内のファイルへ送ることができます。"
 
 # TODO: 推敲
 # TODO: たぶん原文がoutputとinput間違ってる
@@ -227,6 +229,8 @@ msgid ""
 "This can be used in combination with the ``*`` or ``**`` patterns. Examples "
 "include ``a.{b,c}.*`` and ``a.{b,c.**}``"
 msgstr ""
+"これは ``*`` や ``**`` のパターンと組み合わせて使うことができます。例： ``a."
+"{b,c}.*`` や ``a.{b,c.**}`` "
 
 # ddc5ef67cf1e43d382b7edda21b77792
 #: ../../config.rst:102
