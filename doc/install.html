@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Installation &mdash; fluentd 0.10 documentation</title>
+    <title>インストール &mdash; fluentd 0.10 documentation</title>
     
     <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,10 +25,11 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/bizstyle.js"></script>
     <link rel="top" title="fluentd 0.10 documentation" href="index.html" />
-    <link rel="next" title="Configuration File" href="config.html" />
-    <link rel="prev" title="Overview" href="overview.html" />
+    <link rel="next" title="設定ファイル" href="config.html" />
+    <link rel="prev" title="概要" href="overview.html" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -36,59 +37,59 @@
   </head>
   <body>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
+          <a href="genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
         <li class="right" >
-          <a href="config.html" title="Configuration File"
-             accesskey="N">next</a> |</li>
+          <a href="config.html" title="設定ファイル"
+             accesskey="N">次へ</a> |</li>
         <li class="right" >
-          <a href="overview.html" title="Overview"
-             accesskey="P">previous</a> |</li>
+          <a href="overview.html" title="概要"
+             accesskey="P">前へ</a> |</li>
         <li><a href="index.html">fluentd 0.10 documentation</a> &raquo;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
+  <h3><a href="index.html">目次</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Installation</a><ul>
-<li><a class="reference internal" href="#id1">Installation</a><ul>
-<li><a class="reference internal" href="#install-from-binary-package">Install from Binary Package</a></li>
-<li><a class="reference internal" href="#install-from-rubygems">Install from RubyGems</a></li>
-<li><a class="reference internal" href="#install-from-tar-gz">Install from .tar.gz</a></li>
-<li><a class="reference internal" href="#install-from-latest-git-repository">Install from Latest Git Repository</a></li>
+<li><a class="reference internal" href="#">インストール</a><ul>
+<li><a class="reference internal" href="#id1">インストール</a><ul>
+<li><a class="reference internal" href="#install-from-binary-package">バイナリパッケージからのインストール</a></li>
+<li><a class="reference internal" href="#install-from-rubygems">RubyGemsからのインストール</a></li>
+<li><a class="reference internal" href="#install-from-tar-gz">.tar.gzからのインストール</a></li>
+<li><a class="reference internal" href="#install-from-latest-git-repository">最新Gitリポジトリからのインストール</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confirm-installation">Confirm Installation</a></li>
-<li><a class="reference internal" href="#update">Update</a></li>
+<li><a class="reference internal" href="#confirm-installation">インストールの確認</a></li>
+<li><a class="reference internal" href="#update">アップデート</a></li>
 </ul>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
+  <h4>前のトピックへ</h4>
   <p class="topless"><a href="overview.html"
-                        title="previous chapter">Overview</a></p>
-  <h4>Next topic</h4>
+                        title="前の章へ">概要</a></p>
+  <h4>次のトピックへ</h4>
   <p class="topless"><a href="config.html"
-                        title="next chapter">Configuration File</a></p>
-  <h3>This Page</h3>
+                        title="次の章へ">設定ファイル</a></p>
+  <h3>このページ</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/install.txt"
-           rel="nofollow">Show Source</a></li>
+           rel="nofollow">ソースコードを表示</a></li>
   </ul>
 <div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
+  <h3>クイック検索</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <input type="submit" value="検索" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
     <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
+    モジュール、クラス、または関数名を入力してください
     </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
@@ -101,66 +102,66 @@
           <div class="body">
             
   <div class="section" id="installation">
-<span id="install"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<span id="install"></span><h1>インストール<a class="headerlink" href="#installation" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><a class="reference internal" href="#id1" id="id4">Installation</a><ul>
-<li><a class="reference internal" href="#install-from-binary-package" id="id5">Install from Binary Package</a></li>
-<li><a class="reference internal" href="#install-from-rubygems" id="id6">Install from RubyGems</a></li>
-<li><a class="reference internal" href="#install-from-tar-gz" id="id7">Install from .tar.gz</a></li>
-<li><a class="reference internal" href="#install-from-latest-git-repository" id="id8">Install from Latest Git Repository</a></li>
+<li><a class="reference internal" href="#id1" id="id4">インストール</a><ul>
+<li><a class="reference internal" href="#install-from-binary-package" id="id5">バイナリパッケージからのインストール</a></li>
+<li><a class="reference internal" href="#install-from-rubygems" id="id6">RubyGemsからのインストール</a></li>
+<li><a class="reference internal" href="#install-from-tar-gz" id="id7">.tar.gzからのインストール</a></li>
+<li><a class="reference internal" href="#install-from-latest-git-repository" id="id8">最新Gitリポジトリからのインストール</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#confirm-installation" id="id9">Confirm Installation</a></li>
-<li><a class="reference internal" href="#update" id="id10">Update</a></li>
+<li><a class="reference internal" href="#confirm-installation" id="id9">インストールの確認</a></li>
+<li><a class="reference internal" href="#update" id="id10">アップデート</a></li>
 </ul>
 </div>
 <div class="section" id="id1">
-<h2>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>The user can install Fluentd from four sources.</p>
+<h2>インストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>ユーザは次の4つの方法でFluentdをインストールすることができます。</p>
 <ul class="simple">
-<li>Binary package</li>
+<li>バイナリパッケージ</li>
 <li>RubyGems</li>
 <li>.tar.gz</li>
-<li>Git repository</li>
+<li>Gitリポジトリ</li>
 </ul>
-<p>In most cases, installing from the binary package is recommended.</p>
+<p>ほとんどの場合バイナリパッケージからのインストールをお勧めします。</p>
 <div class="section" id="install-from-binary-package">
-<h3>Install from Binary Package<a class="headerlink" href="#install-from-binary-package" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://treasure-data.com/">Treasure Data, Inc.</a> provides the stable distribution of Fluentd, called td-agent. If you don&#8217;t want to install Ruby interpreter (&gt; 1.9.2) by yourself and don&#8217;t want to manage Fluentd + plugins versions, using td-agent is the recommended way.</p>
-<p>td-agent consists of the following components:</p>
+<h3>バイナリパッケージからのインストール<a class="headerlink" href="#install-from-binary-package" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>Fluentdの安定板は <a class="reference external" href="http://treasure-data.com/">Treasure Data, Inc.</a> からtd-agentという名称で提供されています。もし、自分でRubyインタプリタ (&gt; 1.9.2)をインストールしたくない場合、またFluentdとプラグインのバージョンを管理したくない場合にはtd-agentを使うのがお勧めです。</p>
+<p>td-agentは以下のコンポーネントで構成されています:</p>
 <ul class="simple">
-<li>Ruby 1.9.3 interpreter, dedicated to Fluentd (no need to install Ruby on your node)</li>
+<li>Fluentd専用のRuby1.9.3インタプリタ(ノード上でRubyをインストールする必要はありません)</li>
 <li>Fluentd</li>
-<li>jemalloc (supress memory fragmentation)</li>
-<li>Several plugins with stable &amp; compatible versions</li>
+<li>jemalloc (メモリの断片化を防ぎます)</li>
+<li>安定して互換性のあるバージョンのプラグイン</li>
 </ul>
-<p>td-agent is actively maintained and is used within production environments. For details on installing td-agent, please refer to the following documents:</p>
+<p>td-agentは商用環境で使われており、また活発にメンテナンスされています。td-agentのインストールについて、詳細は下記を参照してください:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://help.treasure-data.com/kb/installing-td-agent-daemon/installing-td-agent-for-debian-and-ubuntu">Installing td-agent for Debian and Ubuntu</a></li>
-<li><a class="reference external" href="http://help.treasure-data.com/kb/installing-td-agent-daemon/installing-td-agent-for-redhat-and-centos">Installing td-agent for Redhat and CentOS</a></li>
-<li><a class="reference external" href="http://help.treasure-data.com/kb/installing-td-agent-daemon/changelog-of-td-agent">ChangeLog of td-agent</a></li>
+<li><a class="reference external" href="http://help.treasure-data.com/kb/installing-td-agent-daemon/installing-td-agent-for-debian-and-ubuntu">DebianおよびUbuntuへのtd-agentインストール</a></li>
+<li><a class="reference external" href="http://help.treasure-data.com/kb/installing-td-agent-daemon/installing-td-agent-for-redhat-and-centos">RedhatおよびCentOSへのtd-agentインストール</a></li>
+<li><a class="reference external" href="http://help.treasure-data.com/kb/installing-td-agent-daemon/changelog-of-td-agent">td-agentのChangeLog</a></li>
 </ul>
-<p>Please note that if Fluentd is installed via td-agent, the server command will be &#8216;td-agent&#8217; instead of &#8216;fluentd&#8217;. The config file is located at &#8216;/etc/td-agent/td-agent.conf&#8217;.</p>
+<p>注意: td-agentでFluentdをインストールした場合、サーバー上のコマンドは&#8217;fluentd&#8217;ではなく&#8217;td-agent&#8217;になります。また設定ファイルは&#8217;/etc/td-agent/td-agent.conf&#8217;に置かれます。</p>
 </div>
 <div class="section" id="install-from-rubygems">
-<h3>Install from RubyGems<a class="headerlink" href="#install-from-rubygems" title="Permalink to this headline">¶</a></h3>
-<p>In order to install Fluentd via RubyGems, first install <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> &gt;= 1.9.2. We recommend using <a class="reference external" href="https://rvm.beginrescueend.com/">rvm (Ruby Version Manager)</a> to install Ruby. The installed Ruby version can be confirmed as follows:</p>
+<h3>RubyGemsからのインストール<a class="headerlink" href="#install-from-rubygems" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>RubyGemsでFluentdをインストールするためには、まず <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> &gt;= 1.9.2をインストールする必要があります。Rubyのインストールには <a class="reference external" href="https://rvm.beginrescueend.com/">rvm (Ruby Version Manager)</a> をお勧めします。インストールされたRubyのバージョンは次のように確認できます:</p>
 <div class="highlight-python"><pre>$ ruby --version
 ruby 1.9.2p180 (2011-02-18 revision 30909) [x86_64-darwin10.6.0]</pre>
 </div>
-<p>Once <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> &gt;= 1.9.2 is installed, use the <tt class="docutils literal"><span class="pre">gem</span></tt> command as follows:</p>
+<p><a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> &gt;= 1.9.2 をインストール後、次の <tt class="docutils literal"><span class="pre">gem</span></tt> コマンドを実行します。</p>
 <div class="highlight-python"><pre># system-wide ruby
 $ sudo gem install fluentd
 
 # via rvm
 $ gem install fluentd</pre>
 </div>
-<p>Next step: <a class="reference internal" href="#install-confirm"><em>Confirm Installation</em></a></p>
+<p>次のステップ: <a class="reference internal" href="#install-confirm"><em>インストールの確認</em></a></p>
 </div>
 <div class="section" id="install-from-tar-gz">
-<h3>Install from .tar.gz<a class="headerlink" href="#install-from-tar-gz" title="Permalink to this headline">¶</a></h3>
-<p>Before building the source package, please ensure that the following libraries are already installed:</p>
+<h3>.tar.gzからのインストール<a class="headerlink" href="#install-from-tar-gz" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>ソースパッケージをbuildする前に、以下のライブラリがインストール済みであることを確認して下さい:</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="17%" />
@@ -169,8 +170,8 @@ $ gem install fluentd</pre>
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&nbsp;</th>
-<th class="head">Ubuntu/Debian install</th>
-<th class="head">RedHat/CentOS install</th>
+<th class="head">Ubuntu/Debianでのインストール</th>
+<th class="head">RedHat/CentOSでのインストール</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -188,44 +189,44 @@ $ gem install fluentd</pre>
 </tr>
 </tbody>
 </table>
-<p>Next, download the source package from the <a class="reference external" href="https://github.com/fluent/fluentd/downloads">Download</a> page and extract it.</p>
-<p>Finally, build and install using the following commands:</p>
+<p>次に <a class="reference external" href="https://github.com/fluent/fluentd/downloads">ダウンロードページ</a> からソースパッケージをダウンロードし、展開してください。</p>
+<p>最後に次のコマンドでbuildとインストールを行います:</p>
 <div class="highlight-python"><pre>$ ./configure
 $ make
 $ sudo make install</pre>
 </div>
-<p>The commands above will install Fluentd to <tt class="docutils literal"><span class="pre">$prefix</span></tt> and Ruby to <tt class="docutils literal"><span class="pre">$prefix/lib/fluent/ruby</span></tt>.</p>
-<p>Next step: <a class="reference internal" href="#install-confirm"><em>Confirm Installation</em></a></p>
+<p>上のコマンドでは、Rubyが <tt class="docutils literal"><span class="pre">$prefix/lib/fluent/ruby</span></tt> に、Fluentdが <tt class="docutils literal"><span class="pre">$prefix</span></tt> にインストールされます。</p>
+<p>次のステップ: <a class="reference internal" href="#install-confirm"><em>インストールの確認</em></a></p>
 </div>
 <div class="section" id="install-from-latest-git-repository">
-<h3>Install from Latest Git Repository<a class="headerlink" href="#install-from-latest-git-repository" title="Permalink to this headline">¶</a></h3>
-<p>To install the latest development version of Fluentd from the <a class="reference external" href="https://github.com/fluent/fluentd">source repository</a>, prepare <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> &gt;= 1.9.2 and run the following commands:</p>
+<h3>最新Gitリポジトリからのインストール<a class="headerlink" href="#install-from-latest-git-repository" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>最新の開発版をFluentdの <a class="reference external" href="https://github.com/fluent/fluentd">ソースリポジトリ</a> からインストールするためには、 <a class="reference external" href="http://www.ruby-lang.org/">Ruby</a> &gt;= 1.9.2 を用意し、次のコマンドを実行します:</p>
 <div class="highlight-python"><pre>$ git clone https://github.com/fluent/fluentd.git
 $ cd fluentd
 $ rake
 $ gem install pkg/fluentd-*.gem</pre>
 </div>
-<p>Next step: <a class="reference internal" href="#install-confirm"><em>Confirm Installation</em></a></p>
+<p>次のステップ: <a class="reference internal" href="#install-confirm"><em>インストールの確認</em></a></p>
 </div>
 </div>
 <div class="section" id="confirm-installation">
-<span id="install-confirm"></span><h2>Confirm Installation<a class="headerlink" href="#confirm-installation" title="Permalink to this headline">¶</a></h2>
-<p>To confirm that Fluentd was installed successfully, run the following commands:</p>
+<span id="install-confirm"></span><h2>インストールの確認<a class="headerlink" href="#confirm-installation" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fluentdが正常にインストールされたことを確認するには、次のコマンドを実行します:</p>
 <div class="highlight-python"><pre>$ fluentd --setup ./fluent
 $ fluentd -c ./fluent/fluent.conf -vv &amp;
 $ echo '{"json":"message"}' | fluent-cat debug.test</pre>
 </div>
-<p>The last command sends Fluentd a message &#8216;{&#8220;json&#8221;:&#8221;message&#8221;}&#8217; with a &#8220;debug.test&#8221; tag. If the installation was successful, Fluentd will output the following message:</p>
+<p>最後のコマンドではFluentdに&#8221;debug.test&#8221;タグと&#8217;{&#8220;json&#8221;:&#8221;message&#8221;}&#8217;メッセージが送られ、インストールに成功していればFluentdは次のメッセージを出力します:</p>
 <div class="highlight-python"><pre>2011-07-10 16:49:50 +0900 debug.test: {"json":"message"}</pre>
 </div>
 </div>
 <div class="section" id="update">
-<h2>Update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h2>
-<p>Once Fluentd is installed, the following command will update it to the latest version:</p>
+<h2>アップデート<a class="headerlink" href="#update" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fluentdがインストールされている場合、次のコマンドで最新バージョンにアップデートします:</p>
 <div class="highlight-python"><pre>$ sudo fluent-gem install fluentd</pre>
 </div>
-<p>Next step: <a class="reference internal" href="config.html#config"><em>Configuration File</em></a></p>
-<p>Next step: <a class="reference internal" href="devel.html#devel"><em>Writing plugins</em></a></p>
+<p>次のステップ: <a class="reference internal" href="config.html#config"><em>設定ファイル</em></a></p>
+<p>次のステップ: <a class="reference internal" href="devel.html#devel"><em>プラグイン作成</em></a></p>
 </div>
 </div>
 
@@ -236,17 +237,17 @@ $ echo '{"json":"message"}' | fluent-cat debug.test</pre>
       <div class="clearer"></div>
     </div>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>ナビゲーション</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
+          <a href="genindex.html" title="総合索引"
+             >索引</a></li>
         <li class="right" >
-          <a href="config.html" title="Configuration File"
-             >next</a> |</li>
+          <a href="config.html" title="設定ファイル"
+             >次へ</a> |</li>
         <li class="right" >
-          <a href="overview.html" title="Overview"
-             >previous</a> |</li>
+          <a href="overview.html" title="概要"
+             >前へ</a> |</li>
         <li><a href="index.html">fluentd 0.10 documentation</a> &raquo;</li> 
       </ul>
     </div>
@@ -256,7 +257,7 @@ $ echo '{"json":"message"}' | fluent-cat debug.test</pre>
 
     <div class="footer">
         &copy; Copyright 2011, Sadayuki Furuhashi.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+      このドキュメントは <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 で生成しました。
     </div>
 
 <!-- start Mixpanel -->
