@@ -677,7 +677,7 @@ msgid ""
 "active backup). If you want replication, use ``copy`` plugin described below."
 msgstr ""
 "このプラグインは load-balancing及び、automatic fail-over (a.k.a. active-"
-"active backup)をさポートしています。レプリケーションをしたい場合は、後述の  "
+"active backup)をサポートしています。レプリケーションをしたい場合は、後述の  "
 "``copy`` プラグインを使用してください。"
 
 # 3e692145b4bb49ad88761a18399bfec4
